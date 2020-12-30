@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExperimentStructure xmlns="http://www.scientaomicron.com/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     name="STM_AtomManipulation_AuxChannels" version="v175001" description="STM V/Z atom manipulation experiment with additional channels">
+
+  <ExperimentElementInstance name="CRTCService" elementType="CRTCService" catalogue="SPMBasic">
+    <DeploymentParameter name="Target_Board" value="Default:1"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="AtMaControl" elementType="AtomManipulation" catalogue="SPMBasic">
+    <DeploymentParameter name="Aux_Axis" value="r"/>
+    <DeploymentParameter name="VGap_Device" value="Default:1:VGap_Out"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Z(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5056"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Z_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock1::t1"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5042"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Image"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Regulator::Setpoint_I"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Spectroscopy" elementType="Spectroscopy" catalogue="SPMBasic">
+    <DeploymentParameter name="Actuator_Axis_1" value="V"/>
+    <DeploymentParameter name="Actuator_Axis_2" value="Z"/>
+    <DeploymentParameter name="Actuator_Device_1" value="Default:1:VGap_Out"/>
+    <DeploymentParameter name="Actuator_Device_1_Calibration_Name" value="VGap_Out"/>
+    <DeploymentParameter name="Actuator_Device_2" value="Default:1:Z_Out"/>
+    <DeploymentParameter name="Actuator_Device_2_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Device_1_Absolute_Values" value="true"/>
+    <DeploymentParameter name="Device_1_Label" value="V"/>
+    <DeploymentParameter name="Device_2_Absolute_Values" value="false"/>
+    <DeploymentParameter name="Device_2_Label" value="Z"/>
+    <DeploymentParameter name="Preferred_Modes" value="V;Z;Varied Z"/>
+    <DeploymentParameter name="Trigger_1" value="XYScanner::X"/>
+    <DeploymentParameter name="Trigger_2" value="XYScanner::X"/>
+    <DeploymentParameter name="Unit_1" value="V"/>
+    <DeploymentParameter name="Unit_2" value="m"/>
+    <DeploymentParameter name="VExt_Device" value="Default:1:VGap_Select"/>
+    <DeploymentParameter name="VMod_Device" value="Default:1:VGap_Out_Mod_Select"/>
+    <DeploymentParameter name="ZExt_Device" value="Default:1:Lp_Z_Ext"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="PiezoControl" elementType="PiezoControl" catalogue="SPMBasic">
+    <DeploymentParameter name="Coarse_Device" value="Default:1:Coarse"/>
+    <DeploymentParameter name="Coarse_Inverter_Device" value="Default:1:Coarse_Inverter"/>
+    <DeploymentParameter name="Z_Axis_Device" value="Default:1:Z_Out"/>
+    <DeploymentParameter name="Z_Axis_Device_Calibration_Name" value="Common::Z_Out"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock8" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t8"/>
+    <DeploymentParameter name="Device" value="Default:1:ADC4_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="USCBService" elementType="USCBService" catalogue="SPMBasic">
+    <DeploymentParameter name="Target_Board" value="Default:1"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock1" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t1"/>
+    <DeploymentParameter name="Device" value="Default:1:Z_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock6" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t6"/>
+    <DeploymentParameter name="Device" value="Default:1:ADC2_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock2" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t2"/>
+    <DeploymentParameter name="Device" value="Default:1:IT_Image"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock7" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t7"/>
+    <DeploymentParameter name="Device" value="Default:1:ADC3_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock5" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t5"/>
+    <DeploymentParameter name="Device" value="Default:1:ADC1_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock3" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t3"/>
+    <DeploymentParameter name="Device" value="Default:1:Aux1_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock4" elementType="Clock" catalogue="SPMBasic">
+    <DeploymentParameter name="Axis" value="t4"/>
+    <DeploymentParameter name="Device" value="Default:1:Aux2_In"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="XYScanner" elementType="XYScanner" catalogue="SPMBasic">
+    <DeploymentParameter name="Aux_Axis" value="AtMaControl::r"/>
+    <DeploymentParameter name="Trigger_1_Colour" value="null"/>
+    <DeploymentParameter name="Trigger_2_Colour" value="null"/>
+    <DeploymentParameter name="X_Axis_Device" value="Default:1:X"/>
+    <DeploymentParameter name="X_Inverter_Device" value="Default:1:X_Inverter"/>
+    <DeploymentParameter name="Y_Axis_Device" value="Default:1:Y"/>
+    <DeploymentParameter name="Y_Inverter_Device" value="Default:1:Y_Inverter"/>
+    <DeploymentParameter name="Z_Axis_Device" value="Default:1:Z_Out"/>
+    <DeploymentParameter name="Z_Axis_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Z_Profiling_Rule" value="null"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Regulator" elementType="Regulator" catalogue="SPMBasic">
+    <DeploymentParameter name="Comparator_Device" value="Default:1:Setpoint_I"/>
+    <DeploymentParameter name="Output_Device" value="Default:1:Z_Out"/>
+    <DeploymentParameter name="Output_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Setpoint_Device_1" value="Default:1:Setpoint_I"/>
+    <DeploymentParameter name="Setpoint_Device_1_Calibration_Name" value="Setpoint_I"/>
+    <DeploymentParameter name="Setpoint_Device_2" value="null"/>
+    <DeploymentParameter name="Setpoint_Device_2_Calibration_Name" value="null"/>
+    <DeploymentParameter name="Source_Channel_1" value="I_Reg"/>
+    <DeploymentParameter name="Source_Channel_2" value="null"/>
+    <DeploymentParameter name="Special_Setpoint_Device_1_Calibration_Name" value="Setpoint_I_Special"/>
+    <DeploymentParameter name="Special_Setpoint_Device_2_Calibration_Name" value="null"/>
+    <DeploymentParameter name="Z_Inverter_Device" value="Default:1:Z_Inverter"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A4(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5067"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC4_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A4(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5071"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC4_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux2(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5059"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock4::t4"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A3(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5066"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC3_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5046"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Image"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Regulator::Setpoint_I"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A1(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5072"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock5::t5"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Z"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5043"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Z_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5047"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Image"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Regulator::Setpoint_I"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux1(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5048"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="STMSCBService" elementType="STMSCBService" catalogue="SPMBasic">
+    <DeploymentParameter name="Target_Board" value="Default:1"/>
+    <DeploymentParameter name="Tunnelling_Current_Device" value="null"/>
+    <DeploymentParameter name="Tunnelling_Current_Device_Calibration_Name" value="null"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="GapVoltageControl" elementType="GapVoltage" catalogue="STM">
+    <DeploymentParameter name="VGap_Device" value="Default:1:VGap_Out"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="StageCalibration" elementType="StageCalibration" catalogue="SPMBasic">
+    <DeploymentParameter name="X_Axis_Device" value="Default:1:X"/>
+    <DeploymentParameter name="Y_Axis_Device" value="Default:1:Y"/>
+    <DeploymentParameter name="Z_Axis_Device" value="Default:1:Z_Out"/>
+    <DeploymentParameter name="Z_Axis_Device_Calibration_Name" value="Common::Z_Out"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="DRBService" elementType="DRBService" catalogue="SPMBasic">
+    <DeploymentParameter name="Target_Board" value="Default:1"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux2(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5051"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux2(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5050"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A2(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5073"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock6::t6"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5057"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Image"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Regulator::Setpoint_I"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock2::t2"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A1(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5064"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A3(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5070"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC3_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux1(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5049"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A3"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5062"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC3_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A4"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5063"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC4_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux1(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5058"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock3::t3"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A1"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5060"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A2"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5061"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A3(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5074"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC3_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock7::t7"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z_r" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Z(r)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5053"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Z_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="AtMaControl::r"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_t" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A4(t)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5075"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC4_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Clock8::t8"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A1(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5068"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_r" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux1(r)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5054"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="AtMaControl::r"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Reg" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I_Reg"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="null"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="250000"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Regulator"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="IT_Regulator"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="N"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_r" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="I(r)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5052"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:IT_Image"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Regulator::Setpoint_I_Special"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="AtMaControl::r"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux1"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5044"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux1_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_r" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux2(r)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5055"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="AtMaControl::r"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_Z" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A2(Z)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5069"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_V" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="A2(V)"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5065"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:ADC2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2" elementType="Channel" catalogue="SPMBasic">
+    <DeploymentParameter name="Name" value="Aux2"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5045"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:1:Aux2_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux2_In"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="Trigger" value="XYScanner::X"/>
+  </ExperimentElementInstance>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Activate_Manipulation_Parameters"/>
+    <DestinationRef name="Regulator" port="Enable_Special_Parameter_Set"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Disable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Disable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Done"/>
+    <DestinationRef name="XYScanner" port="Resume"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Enable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Enable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Operation_Active"/>
+    <DestinationRef name="I_r" port="Lock"/>
+    <DestinationRef name="Z_r" port="Lock"/>
+    <DestinationRef name="Aux1_r" port="Lock"/>
+    <DestinationRef name="Aux2_r" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Operation_Done"/>
+    <DestinationRef name="I_r" port="Unlock"/>
+    <DestinationRef name="Z_r" port="Unlock"/>
+    <DestinationRef name="Aux1_r" port="Unlock"/>
+    <DestinationRef name="Aux2_r" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Points"/>
+    <DestinationRef name="I_r" port="Points"/>
+    <DestinationRef name="Z_r" port="Points"/>
+    <DestinationRef name="Aux1_r" port="Points"/>
+    <DestinationRef name="Aux2_r" port="Points"/>
+    <DestinationRef name="XYScanner" port="Aux_Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Raster_Time"/>
+    <DestinationRef name="I_r" port="Raster_Time"/>
+    <DestinationRef name="Z_r" port="Raster_Time"/>
+    <DestinationRef name="Aux1_r" port="Raster_Time"/>
+    <DestinationRef name="Aux2_r" port="Raster_Time"/>
+    <DestinationRef name="XYScanner" port="Aux_Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Restore_Feedback_Loop_State"/>
+    <DestinationRef name="Regulator" port="Restore_Feedback_Loop_State"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Set_Z_Offset"/>
+    <DestinationRef name="Regulator" port="Set_Z_Offset"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="AtMaControl" port="Stopped"/>
+    <DestinationRef name="I_r" port="End_Transmission"/>
+    <DestinationRef name="Z_r" port="End_Transmission"/>
+    <DestinationRef name="Aux1_r" port="End_Transmission"/>
+    <DestinationRef name="Aux2_r" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock1" port="Active"/>
+    <DestinationRef name="Z_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock1" port="Idle"/>
+    <DestinationRef name="Z_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock1" port="Period"/>
+    <DestinationRef name="Z_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock1" port="Samples"/>
+    <DestinationRef name="Z_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock1" port="Stopped"/>
+    <DestinationRef name="Z_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock2" port="Active"/>
+    <DestinationRef name="I_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock2" port="Idle"/>
+    <DestinationRef name="I_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock2" port="Period"/>
+    <DestinationRef name="I_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock2" port="Samples"/>
+    <DestinationRef name="I_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock2" port="Stopped"/>
+    <DestinationRef name="I_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock3" port="Active"/>
+    <DestinationRef name="Aux1_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock3" port="Idle"/>
+    <DestinationRef name="Aux1_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock3" port="Period"/>
+    <DestinationRef name="Aux1_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock3" port="Samples"/>
+    <DestinationRef name="Aux1_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock3" port="Stopped"/>
+    <DestinationRef name="Aux1_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock4" port="Active"/>
+    <DestinationRef name="Aux2_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock4" port="Idle"/>
+    <DestinationRef name="Aux2_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock4" port="Period"/>
+    <DestinationRef name="Aux2_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock4" port="Samples"/>
+    <DestinationRef name="Aux2_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock4" port="Stopped"/>
+    <DestinationRef name="Aux2_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock5" port="Active"/>
+    <DestinationRef name="A1_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock5" port="Idle"/>
+    <DestinationRef name="A1_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock5" port="Period"/>
+    <DestinationRef name="A1_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock5" port="Samples"/>
+    <DestinationRef name="A1_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock5" port="Stopped"/>
+    <DestinationRef name="A1_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock6" port="Active"/>
+    <DestinationRef name="A2_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock6" port="Idle"/>
+    <DestinationRef name="A2_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock6" port="Period"/>
+    <DestinationRef name="A2_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock6" port="Samples"/>
+    <DestinationRef name="A2_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock6" port="Stopped"/>
+    <DestinationRef name="A2_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock7" port="Active"/>
+    <DestinationRef name="A3_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock7" port="Idle"/>
+    <DestinationRef name="A3_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock7" port="Period"/>
+    <DestinationRef name="A3_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock7" port="Samples"/>
+    <DestinationRef name="A3_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock7" port="Stopped"/>
+    <DestinationRef name="A3_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock8" port="Active"/>
+    <DestinationRef name="A4_t" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock8" port="Idle"/>
+    <DestinationRef name="A4_t" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock8" port="Period"/>
+    <DestinationRef name="A4_t" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock8" port="Samples"/>
+    <DestinationRef name="A4_t" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Clock8" port="Stopped"/>
+    <DestinationRef name="A4_t" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="GapVoltageControl" port="Disable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Disable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="GapVoltageControl" port="Done"/>
+    <DestinationRef name="XYScanner" port="Resume"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="GapVoltageControl" port="Enable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Enable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="GapVoltageControl" port="Restore_Feedback_Loop_State"/>
+    <DestinationRef name="Regulator" port="Restore_Feedback_Loop_State"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="PiezoControl" port="Approach_Done"/>
+    <DestinationRef name="Regulator" port="Approach_Done"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="PiezoControl" port="Approach_Pulse"/>
+    <DestinationRef name="PiezoControl" port="Approach3_In"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="PiezoControl" port="Approach_Start"/>
+    <DestinationRef name="Regulator" port="Approach_Start"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Done"/>
+    <DestinationRef name="XYScanner" port="Resume"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Feedback_Loop_State_Changed"/>
+    <DestinationRef name="Spectroscopy" port="Feedback_Loop_State_Changed"/>
+    <DestinationRef name="AtMaControl" port="Feedback_Loop_State_Changed"/>
+    <DestinationRef name="GapVoltageControl" port="Feedback_Loop_State_Changed"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Tip_Trigger_BWD"/>
+    <DestinationRef name="PiezoControl" port="Tip_Trigger_BWD"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Tip_Trigger_FWD"/>
+    <DestinationRef name="PiezoControl" port="Tip_Trigger_FWD"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Toggle_Gap_Voltage"/>
+    <DestinationRef name="GapVoltageControl" port="Toggle_Pulse_Voltage"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Tunnelling_Current_Preamp_Range"/>
+    <DestinationRef name="PiezoControl" port="Ramp_Speed_Selection"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Regulator" port="Z_Offset_Set"/>
+    <DestinationRef name="AtMaControl" port="Z_Offset_Set"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Device_1_Points"/>
+    <DestinationRef name="I_V" port="Points"/>
+    <DestinationRef name="Aux1_V" port="Points"/>
+    <DestinationRef name="Aux2_V" port="Points"/>
+    <DestinationRef name="A1_V" port="Points"/>
+    <DestinationRef name="A2_V" port="Points"/>
+    <DestinationRef name="A3_V" port="Points"/>
+    <DestinationRef name="A4_V" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Device_2_Points"/>
+    <DestinationRef name="I_Z" port="Points"/>
+    <DestinationRef name="Aux1_Z" port="Points"/>
+    <DestinationRef name="Aux2_Z" port="Points"/>
+    <DestinationRef name="A1_Z" port="Points"/>
+    <DestinationRef name="A2_Z" port="Points"/>
+    <DestinationRef name="A3_Z" port="Points"/>
+    <DestinationRef name="A4_Z" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Disable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Disable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Done"/>
+    <DestinationRef name="XYScanner" port="Resume"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Enable_Feedback_Loop"/>
+    <DestinationRef name="Regulator" port="Enable_Feedback_Loop"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Ramp_Active"/>
+    <DestinationRef name="I_V" port="Lock"/>
+    <DestinationRef name="I_Z" port="Lock"/>
+    <DestinationRef name="Aux1_V" port="Lock"/>
+    <DestinationRef name="Aux1_Z" port="Lock"/>
+    <DestinationRef name="Aux2_V" port="Lock"/>
+    <DestinationRef name="Aux2_Z" port="Lock"/>
+    <DestinationRef name="A1_V" port="Lock"/>
+    <DestinationRef name="A1_Z" port="Lock"/>
+    <DestinationRef name="A2_V" port="Lock"/>
+    <DestinationRef name="A2_Z" port="Lock"/>
+    <DestinationRef name="A3_V" port="Lock"/>
+    <DestinationRef name="A3_Z" port="Lock"/>
+    <DestinationRef name="A4_V" port="Lock"/>
+    <DestinationRef name="A4_Z" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Ramp_Done"/>
+    <DestinationRef name="I_V" port="Unlock"/>
+    <DestinationRef name="I_Z" port="Unlock"/>
+    <DestinationRef name="Aux1_V" port="Unlock"/>
+    <DestinationRef name="Aux1_Z" port="Unlock"/>
+    <DestinationRef name="Aux2_V" port="Unlock"/>
+    <DestinationRef name="Aux2_Z" port="Unlock"/>
+    <DestinationRef name="A1_V" port="Unlock"/>
+    <DestinationRef name="A1_Z" port="Unlock"/>
+    <DestinationRef name="A2_V" port="Unlock"/>
+    <DestinationRef name="A2_Z" port="Unlock"/>
+    <DestinationRef name="A3_V" port="Unlock"/>
+    <DestinationRef name="A3_Z" port="Unlock"/>
+    <DestinationRef name="A4_V" port="Unlock"/>
+    <DestinationRef name="A4_Z" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Raster_Time_1"/>
+    <DestinationRef name="I_V" port="Raster_Time"/>
+    <DestinationRef name="Aux1_V" port="Raster_Time"/>
+    <DestinationRef name="Aux2_V" port="Raster_Time"/>
+    <DestinationRef name="A1_V" port="Raster_Time"/>
+    <DestinationRef name="A2_V" port="Raster_Time"/>
+    <DestinationRef name="A3_V" port="Raster_Time"/>
+    <DestinationRef name="A4_V" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Raster_Time_2"/>
+    <DestinationRef name="I_Z" port="Raster_Time"/>
+    <DestinationRef name="Aux1_Z" port="Raster_Time"/>
+    <DestinationRef name="Aux2_Z" port="Raster_Time"/>
+    <DestinationRef name="A1_Z" port="Raster_Time"/>
+    <DestinationRef name="A2_Z" port="Raster_Time"/>
+    <DestinationRef name="A3_Z" port="Raster_Time"/>
+    <DestinationRef name="A4_Z" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Restore_Feedback_Loop_State"/>
+    <DestinationRef name="Regulator" port="Restore_Feedback_Loop_State"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="Spectroscopy" port="Stopped"/>
+    <DestinationRef name="I_V" port="End_Transmission"/>
+    <DestinationRef name="I_Z" port="End_Transmission"/>
+    <DestinationRef name="Aux1_V" port="End_Transmission"/>
+    <DestinationRef name="Aux1_Z" port="End_Transmission"/>
+    <DestinationRef name="Aux2_V" port="End_Transmission"/>
+    <DestinationRef name="Aux2_Z" port="End_Transmission"/>
+    <DestinationRef name="A1_V" port="End_Transmission"/>
+    <DestinationRef name="A1_Z" port="End_Transmission"/>
+    <DestinationRef name="A2_V" port="End_Transmission"/>
+    <DestinationRef name="A2_Z" port="End_Transmission"/>
+    <DestinationRef name="A3_V" port="End_Transmission"/>
+    <DestinationRef name="A3_Z" port="End_Transmission"/>
+    <DestinationRef name="A4_V" port="End_Transmission"/>
+    <DestinationRef name="A4_Z" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Execute"/>
+    <DestinationRef name="Spectroscopy" port="Execute"/>
+    <DestinationRef name="AtMaControl" port="Execute" colour="AtMa"/>
+    <DestinationRef name="AtMaControl" port="Acquire" colour="AtMaAcquire"/>
+    <DestinationRef name="GapVoltageControl" port="Execute" colour="VPulse"/>
+    <DestinationRef name="Regulator" port="Execute" colour="ZRamp"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Lines"/>
+    <DestinationRef name="Z" port="Lines"/>
+    <DestinationRef name="I" port="Lines"/>
+    <DestinationRef name="Aux1" port="Lines"/>
+    <DestinationRef name="Aux2" port="Lines"/>
+    <DestinationRef name="A1" port="Lines"/>
+    <DestinationRef name="A2" port="Lines"/>
+    <DestinationRef name="A3" port="Lines"/>
+    <DestinationRef name="A4" port="Lines"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Points"/>
+    <DestinationRef name="Z" port="Points"/>
+    <DestinationRef name="I" port="Points"/>
+    <DestinationRef name="Aux1" port="Points"/>
+    <DestinationRef name="Aux2" port="Points"/>
+    <DestinationRef name="A1" port="Points"/>
+    <DestinationRef name="A2" port="Points"/>
+    <DestinationRef name="A3" port="Points"/>
+    <DestinationRef name="A4" port="Points"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Raster_Time"/>
+    <DestinationRef name="Z" port="Raster_Time"/>
+    <DestinationRef name="I" port="Raster_Time"/>
+    <DestinationRef name="Aux1" port="Raster_Time"/>
+    <DestinationRef name="Aux2" port="Raster_Time"/>
+    <DestinationRef name="A1" port="Raster_Time"/>
+    <DestinationRef name="A2" port="Raster_Time"/>
+    <DestinationRef name="A3" port="Raster_Time"/>
+    <DestinationRef name="A4" port="Raster_Time"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Scan_Active"/>
+    <DestinationRef name="Z" port="Lock"/>
+    <DestinationRef name="I" port="Lock"/>
+    <DestinationRef name="Aux1" port="Lock"/>
+    <DestinationRef name="Aux2" port="Lock"/>
+    <DestinationRef name="A1" port="Lock"/>
+    <DestinationRef name="A2" port="Lock"/>
+    <DestinationRef name="A3" port="Lock"/>
+    <DestinationRef name="A4" port="Lock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Scan_Idle"/>
+    <DestinationRef name="Z" port="Unlock"/>
+    <DestinationRef name="I" port="Unlock"/>
+    <DestinationRef name="Aux1" port="Unlock"/>
+    <DestinationRef name="Aux2" port="Unlock"/>
+    <DestinationRef name="A1" port="Unlock"/>
+    <DestinationRef name="A2" port="Unlock"/>
+    <DestinationRef name="A3" port="Unlock"/>
+    <DestinationRef name="A4" port="Unlock"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Stopped"/>
+    <DestinationRef name="Z" port="End_Transmission"/>
+    <DestinationRef name="I" port="End_Transmission"/>
+    <DestinationRef name="Aux1" port="End_Transmission"/>
+    <DestinationRef name="Aux2" port="End_Transmission"/>
+    <DestinationRef name="A1" port="End_Transmission"/>
+    <DestinationRef name="A2" port="End_Transmission"/>
+    <DestinationRef name="A3" port="End_Transmission"/>
+    <DestinationRef name="A4" port="End_Transmission"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="Subgrid_Enabled"/>
+    <DestinationRef name="Spectroscopy" port="Raster_Mode_Enable"/>
+  </Connection>
+
+  <Connection>
+    <SourceRef name="XYScanner" port="X_Retrace_Enabled"/>
+    <DestinationRef name="Regulator" port="Alternate_Parameter_Set_Enable"/>
+    <DestinationRef name="GapVoltageControl" port="Alternate_Parameter_Set_Enable"/>
+    <DestinationRef name="Spectroscopy" port="Alternate_Parameter_Set_Enable"/>
+  </Connection>
+
+  <ScriptCode format="base" name="Estimators">
+dmFyIF9fZndkbSwgX19id2RtLCBfX2Z5ID0gMDsgIC8vIGJvb2wgZm9yIGZ3
+ZCBtb2RlLCBib29sIGZvciBid2QgbW9kZSwgeSB0cmFjZS9yZXRyYWNlIG11
+bHRpcGxpZXIgKDIvMSkKdmFyIF9fcHBsID0gMCwgX19scGYgPSAwOyAvLyBu
+dW1iZXIgb2Ygc3ViZ3JpZCBwb2ludHMgcGVyIGxpbmUgLyBwZXIgY29sdW1u
+CmZ1bmN0aW9uICQkeHlzY2FubmVyKCkKewpfX2Z3ZG0gPSB0cnVlOwpfX2J3
+ZG0gPSB0cnVlOwp0cHNmID0gMDsKd2l0aCAoWFlTY2FubmVyKQp7Cl9fZnkg
+PSAuWV9SZXRyYWNlID8gMiA6IDE7CnRwc2wgPSAuTGluZV9TdGFydF9EZWxh
+eSArIC5MaW5lX0VuZF9EZWxheSArIDIgKiAuUmFzdGVyX1RpbWUgKiAuUG9p
+bnRzOwppZiAoLkVuYWJsZV9aX1Byb2ZpbGluZykgdHBzbCAqPSAyOwp0cHNm
+ID0gKHRwc2wgKyAuUmFzdGVyX1RpbWUpICogLkxpbmVzICogX19meTsKX19w
+cGwgPSAoJFNZUzo6TWF0aC5pbnRlZ2VyKC5Qb2ludHMgLyAuU3ViZ3JpZF9Y
+KSkgKyAoKC5Qb2ludHMgJSAuU3ViZ3JpZF9YICE9IDApID8gMSA6IDApOwpf
+X2xwZiA9ICgkU1lTOjpNYXRoLmludGVnZXIoLkxpbmVzIC8gLlN1YmdyaWRf
+WSkpICsgKCguTGluZXMgJSAuU3ViZ3JpZF9ZICE9IDApID8gMSA6IDApOwpz
+d2l0Y2ggKC5TdWJncmlkX01hdGNoX01vZGUpCnsKY2FzZSAwOiBicmVhazsK
+Y2FzZSAxOiBfX2J3ZG0gPSBmYWxzZTsgYnJlYWs7CmNhc2UgMjogX19md2Rt
+ID0gZmFsc2U7IGJyZWFrOwp9Cn0KcmV0dXJuIHRwc2Y7Cn0KZnVuY3Rpb24g
+JCRzcGVjTGluZSgpCnsKdHBjID0gMDsKY250ID0gMDsKd2l0aCAoU3BlY3Ry
+b3Njb3B5KQp7CmlmIChfX2Z3ZG0pCnsKY250Kys7CmlmICgoMCA9PSAuU3Bl
+Y3Ryb3Njb3B5X01vZGUpIHx8ICgyID09IC5TcGVjdHJvc2NvcHlfTW9kZSkp
+CnsKc3RiID0gMDsKc3RlID0gMDsKaWYgKC5FbmFibGVfRGV2aWNlXzFfU2xl
+d19SYXRlKQp7CnZsdGcgPSAoLkVuYWJsZV9HYXBfUHJlc2V0ICYmICguR2Fw
+X1ByZXNldF9Nb2RlICE9IDMpKSA/IC5HYXBfVm9sdGFnZV9QcmVzZXQgOiBH
+YXBWb2x0YWdlQ29udHJvbC5Wb2x0YWdlOwpzdGIgPSAkU1lTOjpNYXRoLmFi
+cyh2bHRnIC0gLkRldmljZV8xX1N0YXJ0KSAvIC5EZXZpY2VfMV9TbGV3X1Jh
+dGU7CmlmICguRW5hYmxlX0RldmljZV8xX1JhbXBfUmV2ZXJzYWwpIHN0ZSA9
+IHN0YjsKZWxzZSBzdGUgPSAkU1lTOjpNYXRoLmFicyh2bHRnIC0gLkRldmlj
+ZV8xX0VuZCkgLyAuRGV2aWNlXzFfU2xld19SYXRlOwp9CmRlbCA9IC5EZWxh
+eV9UMV8xICsgLkRlbGF5X1QyXzEgKyAuRGVsYXlfVDNfMSArIC5EZWxheV9U
+NF8xOwp0cGMgKz0gLkRldmljZV8xX1BvaW50cyAqIC5SYXN0ZXJfVGltZV8x
+ICogKC5FbmFibGVfRGV2aWNlXzFfUmFtcF9SZXZlcnNhbCA/IDIgOiAxKTsK
+dHBjICs9IGRlbCArIHN0YiArIHN0ZTsKfQplbHNlCnsKc3RiID0gMDsKc3Rl
+ID0gMDsKaWYgKC5FbmFibGVfRGV2aWNlXzJfU2xld19SYXRlKQp7CnN0YiA9
+ICRTWVM6Ok1hdGguYWJzKC5EZXZpY2VfMl9TdGFydCkgLyAuRGV2aWNlXzJf
+U2xld19SYXRlOwppZiAoLkVuYWJsZV9EZXZpY2VfMl9SYW1wX1JldmVyc2Fs
+KSBzdGUgPSBzdGI7CmVsc2Ugc3RlID0gJFNZUzo6TWF0aC5hYnMoLkRldmlj
+ZV8yX0VuZCkgLyAuRGV2aWNlXzJfU2xld19SYXRlOwp9CmRlbCA9IC5EZWxh
+eV9UMV8yICsgLkRlbGF5X1QyXzIgKyAuRGVsYXlfVDNfMiArIC5EZWxheV9U
+NF8yICsgLkRldmljZV8yX09mZnNldF9EZWxheTsKdHBjICs9IC5EZXZpY2Vf
+Ml9Qb2ludHMgKiAuUmFzdGVyX1RpbWVfMiAqICguRW5hYmxlX0RldmljZV8y
+X1JhbXBfUmV2ZXJzYWwgPyAyIDogMSk7CnRwYyArPSBkZWwgKyBzdGIgKyBz
+dGU7Cn0KfQppZiAoX19id2RtICYmIFhZU2Nhbm5lci5YX1JldHJhY2UpCnsK
+Y250Kys7CnNwZWNtID0gLkVuYWJsZV9BbHRlcm5hdGVfU3BlY3Ryb3Njb3B5
+X01vZGUgPyAuQWx0ZXJuYXRlX1NwZWN0cm9zY29weV9Nb2RlIDogLlNwZWN0
+cm9zY29weV9Nb2RlOwppZiAoKDAgPT0gc3BlY20pIHx8ICgyID09IHNwZWNt
+KSkKewpndmx0ZyA9IDA7CnN0YXJ0ID0gLkVuYWJsZV9BbHRlcm5hdGVfRGV2
+aWNlXzFfU3RhcnQgPyAuQWx0ZXJuYXRlX0RldmljZV8xX1N0YXJ0IDogLkRl
+dmljZV8xX1N0YXJ0OwplbmQgPSAuRW5hYmxlX0FsdGVybmF0ZV9EZXZpY2Vf
+MV9FbmQgPyAuQWx0ZXJuYXRlX0RldmljZV8xX0VuZCA6IC5EZXZpY2VfMV9F
+bmQ7CndpdGggKEdhcFZvbHRhZ2VDb250cm9sKSBndmx0ZyA9IC5FbmFibGVf
+QWx0ZXJuYXRlX1ZvbHRhZ2UgPyAuQWx0ZXJuYXRlX1ZvbHRhZ2UgOiAuVm9s
+dGFnZTsKdmx0ZyA9ICguRW5hYmxlX0dhcF9QcmVzZXQgJiYgKC5HYXBfUHJl
+c2V0X01vZGUgIT0gMykpID8gLkdhcF9Wb2x0YWdlX1ByZXNldCA6IGd2bHRn
+OwpkZWwgPSAuRW5hYmxlX0FsdGVybmF0ZV9EZWxheV9UMV8xID8gLkFsdGVy
+bmF0ZV9EZWxheV9UMV8xIDogLkRlbGF5X1QxXzE7CmRlbCArPSAuRW5hYmxl
+X0FsdGVybmF0ZV9EZWxheV9UMl8xID8gLkFsdGVybmF0ZV9EZWxheV9UMl8x
+IDogLkRlbGF5X1QyXzE7CmRlbCArPSAuRW5hYmxlX0FsdGVybmF0ZV9EZWxh
+eV9UM18xID8gLkFsdGVybmF0ZV9EZWxheV9UM18xIDogLkRlbGF5X1QzXzE7
+CmRlbCArPSAuRW5hYmxlX0FsdGVybmF0ZV9EZWxheV9UNF8xID8gLkFsdGVy
+bmF0ZV9EZWxheV9UNF8xIDogLkRlbGF5X1Q0XzE7CnN0YiA9IDA7CnN0ZSA9
+IDA7CmlmICguRW5hYmxlX0RldmljZV8xX1NsZXdfUmF0ZSkKewppZiAoLkVu
+YWJsZV9BbHRlcm5hdGVfRGV2aWNlXzFfU2xld19SYXRlKQp7CnN0YiA9ICRT
+WVM6Ok1hdGguYWJzKHZsdGcgLSBzdGFydCkgLyAuQWx0ZXJuYXRlX0Rldmlj
+ZV8xX1NsZXdfUmF0ZTsKaWYgKC5FbmFibGVfRGV2aWNlXzFfUmFtcF9SZXZl
+cnNhbCkgc3RlID0gc3RiOwplbHNlIHN0ZSA9ICRTWVM6Ok1hdGguYWJzKHZs
+dGcgLSBlbmQpIC8gLkFsdGVybmF0ZV9EZXZpY2VfMV9TbGV3X1JhdGU7Cn0K
+ZWxzZQp7CnN0YiA9ICRTWVM6Ok1hdGguYWJzKHZsdGcgLSBzdGFydCkgLyAu
+RGV2aWNlXzFfU2xld19SYXRlOwppZiAoLkVuYWJsZV9EZXZpY2VfMV9SYW1w
+X1JldmVyc2FsKSBzdGUgPSBzdGI7CmVsc2Ugc3RlID0gJFNZUzo6TWF0aC5h
+YnModmx0ZyAtIGVuZCkgLyAuRGV2aWNlXzFfU2xld19SYXRlOwp9Cn0KdHBj
+ICs9IC5EZXZpY2VfMV9Qb2ludHMgKiAuUmFzdGVyX1RpbWVfMSAqICguRW5h
+YmxlX0RldmljZV8xX1JhbXBfUmV2ZXJzYWwgPyAyIDogMSkgKyBkZWwgKyBz
+dGIgKyBzdGU7Cn0KZWxzZQp7CnN0YXJ0ID0gLkVuYWJsZV9BbHRlcm5hdGVf
+RGV2aWNlXzJfU3RhcnQgPyAuQWx0ZXJuYXRlX0RldmljZV8yX1N0YXJ0IDog
+LkRldmljZV8yX1N0YXJ0OwplbmQgPSAuRW5hYmxlX0FsdGVybmF0ZV9EZXZp
+Y2VfMl9FbmQgPyAuQWx0ZXJuYXRlX0RldmljZV8yX0VuZCA6IC5EZXZpY2Vf
+Ml9FbmQ7CmRlbCA9IC5FbmFibGVfQWx0ZXJuYXRlX0RlbGF5X1QxXzIgPyAu
+QWx0ZXJuYXRlX0RlbGF5X1QxXzIgOiAuRGVsYXlfVDFfMjsKZGVsICs9IC5F
+bmFibGVfQWx0ZXJuYXRlX0RlbGF5X1QyXzIgPyAuQWx0ZXJuYXRlX0RlbGF5
+X1QyXzIgOiAuRGVsYXlfVDJfMjsKZGVsICs9IC5FbmFibGVfQWx0ZXJuYXRl
+X0RlbGF5X1QzXzIgPyAuQWx0ZXJuYXRlX0RlbGF5X1QzXzIgOiAuRGVsYXlf
+VDNfMjsKZGVsICs9IC5FbmFibGVfQWx0ZXJuYXRlX0RlbGF5X1Q0XzIgPyAu
+QWx0ZXJuYXRlX0RlbGF5X1Q0XzIgOiAuRGVsYXlfVDRfMjsKZGVsICs9IC5E
+ZXZpY2VfMl9PZmZzZXRfRGVsYXk7CnN0YiA9IDA7CnN0ZSA9IDA7CmlmICgu
+RW5hYmxlX0RldmljZV8yX1NsZXdfUmF0ZSkKewppZiAoLkVuYWJsZV9BbHRl
+cm5hdGVfRGV2aWNlXzJfU2xld19SYXRlKQp7CnN0YiA9ICRTWVM6Ok1hdGgu
+YWJzKHN0YXJ0KSAvIC5BbHRlcm5hdGVfRGV2aWNlXzJfU2xld19SYXRlOwpp
+ZiAoLkVuYWJsZV9EZXZpY2VfMl9SYW1wX1JldmVyc2FsKSBzdGUgPSBzdGI7
+CmVsc2Ugc3RlID0gJFNZUzo6TWF0aC5hYnMoc3RhcnQpIC8gLkFsdGVybmF0
+ZV9EZXZpY2VfMl9TbGV3X1JhdGU7Cn0KZWxzZQp7CnN0YiA9ICRTWVM6Ok1h
+dGguYWJzKHN0YXJ0KSAvIC5EZXZpY2VfMl9TbGV3X1JhdGU7CmlmICguRW5h
+YmxlX0RldmljZV8yX1JhbXBfUmV2ZXJzYWwpIHN0ZSA9IHN0YjsKZWxzZSBz
+dGUgPSAkU1lTOjpNYXRoLmFicyhzdGFydCkgLyAuRGV2aWNlXzJfU2xld19S
+YXRlOwp9Cn0KdHBjICs9IC5EZXZpY2VfMl9Qb2ludHMgKiAuUmFzdGVyX1Rp
+bWVfMiAqICguRW5hYmxlX0RldmljZV8yX1JhbXBfUmV2ZXJzYWwgPyAyIDog
+MSkgKyBkZWwgKyBzdGIgKyBzdGU7Cn0KfQppZiAoLkVuYWJsZV9HYXBfUHJl
+c2V0KQp7CmdwZCA9IC5HYXBfUHJlc2V0X0ZlZWRiYWNrX1ByZV9EZWxheSAr
+IC5HYXBfUHJlc2V0X0ZlZWRiYWNrX1Bvc3RfRGVsYXk7Cmdwc3QgPSAwOwpp
+ZiAoKC5HYXBfUHJlc2V0X01vZGUgIT0gMykgJiYgLkVuYWJsZV9HYXBfVm9s
+dGFnZV9QcmVzZXRfU2xld19SYXRlKQp7Cmdwc3QgPSAkU1lTOjpNYXRoLmFi
+cyhHYXBWb2x0YWdlQ29udHJvbC5Wb2x0YWdlIC0gLkdhcF9Wb2x0YWdlX1By
+ZXNldCkgLyAuR2FwX1ZvbHRhZ2VfUHJlc2V0X1NsZXdfUmF0ZTsKfQp0cGdw
+ID0gMDsKaWYgKC5HYXBfUHJlc2V0X01vZGUgIT0gMikKdHBncCA9IGdwc3Qg
+KiAyICsgZ3BkOwplbHNlCnsKdHBncCA9ICguR2FwX1ByZXNldF9GZWVkYmFj
+a19QcmVfRGVsYXkgPiBncHN0KSA/IC5HYXBfUHJlc2V0X0ZlZWRiYWNrX1By
+ZV9EZWxheSA6IGdwc3Q7CnRwZ3AgKz0gKC5HYXBfUHJlc2V0X0ZlZWRiYWNr
+X1Bvc3RfRGVsYXkgPiBncHN0KSA/IC5HYXBfUHJlc2V0X0ZlZWRiYWNrX1Bv
+c3RfRGVsYXkgOiBncHN0Owp9CnRwYyArPSAodHBncCArIDAuMDAyKSAqIGNu
+dDsKfQp0cGMgKz0gKDAuMDA3ICsgKDAuMDAxICogKC5FbmFibGVfU3RhdHVz
+X1NpZ25hbHMgPyAxIDogMCkpKSAqIGNudDsKfQpyZXR1cm4gdHBjOwp9CmZ1
+bmN0aW9uICRlc3RpbWF0ZVJhc3RlclNjYW4oKQp7CnRvdGFsID0gMDsKdHJ5
+CnsKdG90YWwgPSAkJHh5c2Nhbm5lcigpOwppZiAoWFlTY2FubmVyLkVuYWJs
+ZV9TdWJncmlkKSB0b3RhbCArPSAkJHNwZWNMaW5lKCkgKiBfX3BwbCAqIF9f
+bHBmICogX19meTsKfQpjYXRjaCAoRU5USVRZRVJSKQp7fQpyZXR1cm4gIlRp
+bWUgcGVyIHNjYW4gY3ljbGU7IiArIHRvdGFsOwp9CmZ1bmN0aW9uICRlc3Rp
+bWF0ZVNQU0xpbmUoKQp7CnRvdGFsID0gMDsKdHJ5CnsKdG90YWwgPSAkJHNw
+ZWNMaW5lKCk7Cn0KY2F0Y2ggKEVOVElUWUVSUikKe30KcmV0dXJuICJUaW1l
+IGZvciBvbmUgc3BlY3Ryb3Njb3B5IG1lYXN1cmVtZW50OyIgKyB0b3RhbDsK
+fSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=
+  </ScriptCode>
+
+</ExperimentStructure>

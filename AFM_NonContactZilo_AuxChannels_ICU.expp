@@ -1,0 +1,2030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExperimentElementParameters xmlns="http://www.scientaomicron.com/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <!--Define default values for standard parameters-->
+
+  <ExperimentElementInstance name="AtMaControl" elementType="AtomManipulation" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="ZI_Used">
+        <Boolean>true</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Delay_T1" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T2" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T3" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T4" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Enable_Gap_Voltage_Slew_Rate" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Feedback_Loop_Enabled" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Gap_Voltage" monitored="true">
+        <Double>1</Double>
+      </Parameter>
+      <Parameter name="Gap_Voltage_Mode" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Gap_Voltage_Range" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Gap_Voltage_Slew_Rate" monitored="true">
+        <Double>3</Double>
+      </Parameter>
+      <Parameter name="Points" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+      <Parameter name="Raster_Time" monitored="true">
+        <Double>0.020</Double>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock1" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock2" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock5" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock6" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock20" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock21" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock22" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock23" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock24" elementType="Clock" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock7" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock8" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock9" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock10" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock11" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Clock12" elementType="ClockZilo" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Period" monitored="true">
+        <Double>0.05</Double>
+      </Parameter>
+      <Parameter name="Samples" monitored="true">
+        <Cardinal>100</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="GapVoltageControl" elementType="GapVoltage" catalogue="STM">
+    <Group name="Default">
+      <Parameter name="Alternate_Preamp_Range" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Alternate_Voltage" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Preamp_Range" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Voltage" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Const_Voltage">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Voltage_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Preamp_Range" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Tip_Cond_Enable_Feedback_Loop" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Tip_Cond_Pulse_Preamp_Range" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Tip_Cond_Pulse_Time" monitored="true">
+        <Double>0.001</Double>
+      </Parameter>
+      <Parameter name="Tip_Cond_Pulse_Voltage" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Voltage" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Voltage_Slew_Rate" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="PiezoControl" elementType="PiezoControl" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Approach_Parameter_Visibility">
+        <Cardinal>2</Cardinal>
+      </Parameter>
+      <Parameter name="Auto_Approach_Post_Ramp_Delay">
+        <Double>0.1</Double>
+      </Parameter>
+      <Parameter name="Auto_Approach_Pre_Ramp_Delay">
+        <Double>0.2</Double>
+      </Parameter>
+      <Parameter name="Auto_Approach_Retraction_Speed">
+        <Double>1.0e-006</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Approach_Ramp_Speed_High_Range">
+        <Double>1.3e-007</Double>
+      </Parameter>
+      <Parameter name="Auto_Approach_Ramp_Speed_Low_Range">
+        <Double>8e-008</Double>
+      </Parameter>
+      <Parameter name="Auto_Approach_Timeout">
+        <Double>20</Double>
+      </Parameter>
+      <Parameter name="Retraction_Speed">
+        <Double>1.8e-006</Double>
+      </Parameter>
+      <Parameter name="Steps">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Voltage">
+        <Cardinal>4</Cardinal>
+      </Parameter>
+      <Parameter name="Frequency">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Dial_Option">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Dial">
+        <Cardinal>255</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Regulator" elementType="Regulator" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="ADC_Read_Mode_1">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="ADC_Read_Mode_2">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Algorithm_Characteristics_1">
+        <Cardinal>10</Cardinal>
+      </Parameter>
+      <Parameter name="Algorithm_Characteristics_2">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Alternate_Line_Weighting" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_1_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_1_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_1_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_1_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_2_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_2_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_2_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Alternate_Loop_Gain_2_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Setpoint_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Setpoint_2" monitored="true">
+        <Double>1e-009</Double>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Line_Weighting" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_1_D">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_1_I" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_1_K">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_1_P">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_2_D">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_2_I" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_2_K">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Loop_Gain_2_P">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Setpoint_1" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Setpoint_2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Feedback_Loop_Characteristic_1">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Feedback_Loop_Characteristic_2">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Feedback_Loop_Enabled" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Loop_Gain_1_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_1_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_1_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_2_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_2_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_2_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Run_Frequency">
+        <Cardinal>62500</Cardinal>
+      </Parameter>
+      <Parameter name="Setpoint_Limit_Absolute_1">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Setpoint_Limit_Absolute_2">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_1_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_1_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_1_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_2_D">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_2_K">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_2_P">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Offset" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="ShowProtectRetr">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="ProtectRetrLED" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Approach_Line" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Auto_Approach_Mode_1">
+        <Cardinal>2</Cardinal>
+      </Parameter>
+      <Parameter name="Auto_Approach_Mode_2">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Const_Setpoint">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Delta_f_Min_1" monitored="true">
+        <Double>-100</Double>
+      </Parameter>
+      <Parameter name="Delta_f_Min_2" monitored="true">
+        <Double>-100</Double>
+      </Parameter>
+      <Parameter name="Enable_Z_Offset_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Z_Offset_Special_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Z_Ramp_Gap_Voltage" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Z_Ramp_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Line_Weighting" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_1_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Loop_Gain_2_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Preamp_Range_1" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Preamp_Range_2" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Setpoint_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Setpoint_2" monitored="true">
+        <Double>1e-009</Double>
+      </Parameter>
+      <Parameter name="Sign_1" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Sign_2" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Special_Line_Weighting" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_1_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Special_Loop_Gain_2_I" monitored="true">
+        <Double>7</Double>
+      </Parameter>
+      <Parameter name="Special_Preamp_Range_1" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Special_Preamp_Range_2" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Special_Setpoint_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Special_Setpoint_2" monitored="true">
+        <Double>1e-009</Double>
+      </Parameter>
+      <Parameter name="Z_Offset_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Offset_Slew_Rate" monitored="true">
+        <Double>1e-007</Double>
+      </Parameter>
+      <Parameter name="Z_Offset_Special" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Offset_Special_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Offset_Special_Slew_Rate" monitored="true">
+        <Double>1e-007</Double>
+      </Parameter>
+      <Parameter name="Z_Ramp" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Ramp_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Z_Ramp_Slew_Rate" monitored="true">
+        <Double>1e-007</Double>
+      </Parameter>
+      
+      
+      <Parameter name="ProtectRetrEN" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="PauseScanEN" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="ContScanEN" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Z_Out_Retract_Value" monitored="true">
+        <Double>2e-008</Double>
+      </Parameter>
+      <Parameter name="Setpoint_1_ZI" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <!--Parameter name="Setpoint_2_ZI" monitored="true">
+        <Double>0</Double>
+      </Parameter-->
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Spectroscopy" elementType="Spectroscopy" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="ZI_Used">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Aux1_Range" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Alternate_Aux2_Range" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T1_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T1_2" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T2_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T2_2" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T3_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T3_2" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T4_1" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Delay_T4_2" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_1_End" monitored="true">
+        <Double>1</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_1_Slew_Rate" monitored="true">
+        <Double>9000</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_1_Start" monitored="true">
+        <Double>-1</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_2_End" monitored="true">
+        <Double>1e-008</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_2_Slew_Rate" monitored="true">
+        <Double>1e-006</Double>
+      </Parameter>
+      <Parameter name="Alternate_Device_2_Start" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_VExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_VExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_VMod_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_VMod_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_ZExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Modulation_ZExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Alternate_Spectroscopy_Mode" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Aux1_Range" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Aux2_Range" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T1_1" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T1_2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T2_1" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T2_2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T3_1" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T3_2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T4_1" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Delay_T4_2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_1_End" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_1_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_1_Start" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_2_End" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_2_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Device_2_Start" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_VExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_VExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_VMod_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_VMod_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_ZExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Modulation_ZExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Alternate_Spectroscopy_Mode" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Feedback_Loop" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Mode_Locks">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_1_Ramp_Reversal" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_2_Ramp_Reversal" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Aux1_Range" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Aux2_Range" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Correction_Strategy" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Delay_T1_1" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T1_2" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T2_1" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T2_2" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T3_1" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T3_2" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T4_1" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Delay_T4_2" monitored="true">
+        <Double>0.0001</Double>
+      </Parameter>
+      <Parameter name="Device_1_End" monitored="true">
+        <Double>1</Double>
+      </Parameter>
+      <Parameter name="Device_1_Points" monitored="true">
+        <Cardinal>51</Cardinal>
+      </Parameter>
+      <Parameter name="Device_1_Ramp_Step_Slew_Rate" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Device_1_Repetitions" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Device_1_Slew_Rate" monitored="true">
+        <Double>100</Double>
+      </Parameter>
+      <Parameter name="Device_1_Start" monitored="true">
+        <Double>-1</Double>
+      </Parameter>
+      <Parameter name="Device_2_Change_Negative" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Device_2_Change_Positive" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Device_2_End" monitored="true">
+        <Double>1e-008</Double>
+      </Parameter>
+      <Parameter name="Device_2_Offset" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Device_2_Offset_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Device_2_Points" monitored="true">
+        <Cardinal>51</Cardinal>
+      </Parameter>
+      <Parameter name="Device_2_Ramp_Step_Slew_Rate" monitored="true">
+        <Double>0.0019</Double>
+      </Parameter>
+      <Parameter name="Device_2_Repetitions" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Device_2_Slew_Rate" monitored="true">
+        <Double>1e-006</Double>
+      </Parameter>
+      <Parameter name="Device_2_Start" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Disable_Feedback_Loop" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_1_Ramp_Step_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_1_Slew_Rate" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_2_Ramp_Step_Slew_Rate" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Device_2_Slew_Rate" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Modulation" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Status_Signals" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Maximum_Points_1" monitored="true">
+        <Cardinal>500</Cardinal>
+      </Parameter>
+      <Parameter name="Maximum_Points_2" monitored="true">
+        <Cardinal>500</Cardinal>
+      </Parameter>
+      <Parameter name="Modulation_VExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Modulation_VExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Modulation_VMod_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Modulation_VMod_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Modulation_ZExt_T1T2" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Modulation_ZExt_T2T3" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Pause_Conduct_Mode" monitored="true">
+        <Cardinal>2</Cardinal>
+      </Parameter>
+      <Parameter name="Raster_Time_1" monitored="true">
+        <Double>0.001</Double>
+      </Parameter>
+      <Parameter name="Raster_Time_2" monitored="true">
+        <Double>0.001</Double>
+      </Parameter>
+      <Parameter name="Reenable_Feedback_Loop" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Spectroscopy_Mode" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="XYScanner" elementType="XYScanner" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="ZI_Used">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Auto_Disable_Scan">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Automatic_Drift_Compensation" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Drift_Compensation" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Scan">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Relocation_Step_Limit">
+        <Double>5e-011</Double>
+      </Parameter>
+      <Parameter name="Relocation_Time_Limit">
+        <Cardinal>40</Cardinal>
+      </Parameter>
+      <Parameter name="X_Drift" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Y_Drift" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Angle" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Drift_Compensation_Ratio">
+        <Double>90</Double>
+      </Parameter>
+      <Parameter name="Drift_Offset_Elimination_Rate">
+        <Double>20</Double>
+      </Parameter>
+      <Parameter name="Enable_Subgrid" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Exact_Match" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Height" monitored="true">
+        <Double>1e-007</Double>
+      </Parameter>
+      <Parameter name="Line_End_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Line_Start_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Lines" monitored="true">
+        <Cardinal>300</Cardinal>
+      </Parameter>
+      <Parameter name="Move_Raster_Time" monitored="true">
+        <Double>0.0005</Double>
+      </Parameter>
+      <Parameter name="Move_Raster_Time_Constrained">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Points" monitored="true">
+        <Cardinal>300</Cardinal>
+      </Parameter>
+      <Parameter name="Points_Lines_Constrained">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Raster_Time" monitored="true">
+        <Double>0.0005</Double>
+      </Parameter>
+      <Parameter name="Scan_Constraint" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Speed_Adaptation" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Subgrid_Constrained">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Subgrid_Match_Mode" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Subgrid_X" monitored="true">
+        <Cardinal>10</Cardinal>
+      </Parameter>
+      <Parameter name="Subgrid_Y" monitored="true">
+        <Cardinal>10</Cardinal>
+      </Parameter>
+      <Parameter name="Width" monitored="true">
+        <Double>1e-007</Double>
+      </Parameter>
+      <Parameter name="Width_Height_Constrained" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="X_Offset" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="X_Retrace" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Y_Offset" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Y_Retrace" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Reg_Mon" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">    
+      <Parameter name="Label" monitored="true">
+        <String>I Reg Mon</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Reg_Mon_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">    
+      <Parameter name="Label" monitored="true">
+        <String>I Reg Mon(t)</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">    
+      <Parameter name="Label" monitored="true">
+        <String>Df Reg Mon</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">    
+      <Parameter name="Label" monitored="true">
+        <String>Df Reg Mon(t)</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Df Reg Mon(V)</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Df Reg Mon(Z)</String>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux1_Reg" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>4</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_r" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0.1</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Aux2_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_r" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="I_Reg" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>4</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z_r" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="Z_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="CRTCService" elementType="CRTCService" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="RCSC" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="AAB_Mux_0" monitored="true">
+        <Cardinal>3</Cardinal>
+      </Parameter>
+      <Parameter name="AAB_Mux_1" monitored="true">
+        <Cardinal>2</Cardinal>
+      </Parameter>
+      <Parameter name="AAB_Mux_2" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="AAB_Mux_3" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="DRBService" elementType="DRBService" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Aux1_In_Select" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Aux2_In_Select" monitored="true">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_Aux1_In" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_Aux1_In_AA" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Lp_Aux2_In" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_Aux2_In_AA" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Lp_Z_Ext" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_Z_Out" monitored="true">
+        <Cardinal>3</Cardinal>
+      </Parameter>
+      <Parameter name="VCal_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="STMSCBService" elementType="STMSCBService" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="IT_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_IT_Image_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_IT_Regulator" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_IT_Regulator_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_VGap_Out_Rg" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="VCal_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="VGap_Int_Ext_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="VGap_Out_Mod_Select" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="VGap_Out_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="VGap_Select" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="StageCalibration" elementType="StageCalibration" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Enable_PFU_Filter" monitored="true">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="PFU_Z_Gain" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="USCBService" elementType="USCBService" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="ADC1_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="ADC2_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="ADC3_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="ADC4_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="DAC1_Cal_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="DAC1_Out_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="DAC2_Cal_In_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="DAC2_Out_Select" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_ADC1_In_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_ADC2_In_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_ADC3_In_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_ADC4_In_AA" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_DAC1_Out_Rg" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+      <Parameter name="Lp_DAC2_Out_Rg" monitored="true">
+        <Cardinal>0</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_Z" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A1_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A2_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A3_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+  <ExperimentElementInstance name="A4_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
+</ExperimentElementParameters>

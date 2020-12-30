@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://www.scientaomicron.com/schema"
+            name="STM_Spectroscopy_ZV"
+            version="v171501"
+            description="STM V/Z spectrosocpy experiment, additional Z(V) channel"
+            experimentStructureURI="STM_Spectroscopy_ZV.exps"
+            viewSystemURI="STM_Spectroscopy_ZV.vied"
+            experimentStateRepresentative="XYScanner">
+
+  <Instrument name="Default" dataSet="STM/AFM for SPM PRE 4" parameterSet="VT AFM"/>
+
+  <ExperimentStructureParametersURI fileSpec="STM_Spectroscopy_ZV.expp"/>
+  <ViewSystemParametersURI fileSpec="STM_Spectroscopy_ZV.viep"/>
+
+  <WindowDescription>
+
+    <Window name="STMSZV_XYScanner" caption="XY Scanner">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_ScanParameters" experimentElementInstanceName="XYScanner" panelType="ScanParameter"/>
+      <Panel name="STMSZV_LineDelay" experimentElementInstanceName="XYScanner" panelType="LineDelay"/>
+      <Panel name="STMSZV_XYArea" experimentElementInstanceName="XYScanner" panelType="Area"/>
+      <Panel name="STMSZV_DriftCompensation" experimentElementInstanceName="XYScanner" panelType="DriftCompensation"/>
+    </Window>
+
+    <Window name="STMSZV_ZControl" caption="Z Regulation">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_GapVoltage" experimentElementInstanceName="GapVoltageControl" panelType="Control"/>
+      <Panel name="STMSZV_VGapFilter" experimentElementInstanceName="STMSCBService" panelType="VGapFilter"/>
+      <GuiContainer name="STMSZV_ZControl_Regulator_Row">
+        <Layout border="noFrame" spacing="7">
+          <BoxSpecification alignment="auto" direction="horizontal"/>
+        </Layout>
+        <Panel name="STMSZV_Regulator_ZMeter" experimentElementInstanceName="Regulator" panelType="ZMeter"/>
+        <GuiContainer name="STMSZV_ZControl_Regulator_Column">
+          <Layout border="noFrame" spacing="7">
+            <BoxSpecification alignment="auto" direction="vertical"/>
+          </Layout>
+          <Panel name="STMSZV_FeedbackLoopBasic" experimentElementInstanceName="Regulator" panelType="FeedbackLoopBasic"/>
+          <Panel name="STMSZV_FeedbackLoopZOffset" experimentElementInstanceName="Regulator" panelType="FeedbackLoopZOffset"/>
+          <Panel name="STMSZV_ZPlane" experimentElementInstanceName="XYScanner" panelType="ZPlane"/>
+          <Panel name="STMSZV_FeedbackLoopParameter" experimentElementInstanceName="Regulator" panelType="FeedbackLoopParameter"/>
+          <Panel name="STMSZV_AutoApproach" experimentElementInstanceName="PiezoControl" panelType="AutoApproach"/>
+        </GuiContainer>
+      </GuiContainer>
+      <Panel name="STMSZV_IRegulatorFilter" experimentElementInstanceName="STMSCBService" panelType="IRegulatorFilter"/>
+      <Panel name="STMSZV_PFU" experimentElementInstanceName="StageCalibration" panelType="PFU"/>
+    </Window>
+
+    <Window name="STMSZV_CoarseControl" caption="Coarse Control">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_TipSampleControl" experimentElementInstanceName="PiezoControl" panelType="TipSampleControl"/>
+      <Panel name="STMSZV_Option" experimentElementInstanceName="PiezoControl" panelType="Option"/>
+    </Window>
+
+    <Window name="STMSZV_TipConditioning" caption="Tip Conditioning">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_TipConditioningPulse" experimentElementInstanceName="GapVoltageControl" panelType="Pulse"/>
+      <Panel name="STMSZV_TipConditioningZRamp" experimentElementInstanceName="Regulator" panelType="TipPreparationZRamp"/>
+    </Window>
+
+    <Window name="STMSZV_ExternalInputs" caption="External Inputs">
+      <Layout border="noFrame">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_SelectVModAndVExtPanel" experimentElementInstanceName="STMSCBService" panelType="SelectVModAndVExt"/>
+      <Panel name="STMSZV_ZExtPanel" experimentElementInstanceName="DRBService" panelType="ZExt"/>
+      <Stretch/>
+    </Window>
+
+    <Window name="STMSZV_Spectroscopy" caption="Spectroscopy">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_SubgridPanel" experimentElementInstanceName="XYScanner" panelType="Subgrid"/>
+      <Panel name="STMSZV_SpectroscopyPanel" experimentElementInstanceName="Spectroscopy" panelType="Basic"/>
+    </Window>	
+
+    <Window name="STMSZV_StageCalibration" caption="Stage Calibration">
+      <Layout border="noFrame" spacing="7">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_XYZCalibration" experimentElementInstanceName="StageCalibration" panelType="Calibration"/>
+    </Window>
+
+    <Window name="STMSZV_ChannelList" caption="Channel List">
+      <Layout border="noFrame" spacing="4">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Z_Activation" experimentElementInstanceName="Z" panelType="ChannelControl"/>
+      <Panel name="STMSZV_I_Activation" experimentElementInstanceName="I" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux1_Activation" experimentElementInstanceName="Aux1" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux2_Activation" experimentElementInstanceName="Aux2" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Z_V_Activation" experimentElementInstanceName="Z_V" panelType="ChannelControl"/>
+      <Panel name="STMSZV_I_V_Activation" experimentElementInstanceName="I_V" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux1_V_Activation" experimentElementInstanceName="Aux1_V" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux2_V_Activation" experimentElementInstanceName="Aux2_V" panelType="ChannelControl"/>
+      <Panel name="STMSZV_I_Z_Activation" experimentElementInstanceName="I_Z" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux1_Z_Activation" experimentElementInstanceName="Aux1_Z" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux2_Z_Activation" experimentElementInstanceName="Aux2_Z" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Z_t_Activation" experimentElementInstanceName="Z_t" panelType="ChannelControl"/>
+      <Panel name="STMSZV_I_t_Activation" experimentElementInstanceName="I_t" panelType="ChannelControl"/>
+      <Panel name="STMSZV_Aux2_t_Activation" experimentElementInstanceName="Aux2_t" panelType="ChannelControl"/>
+      <Stretch/>
+    </Window>
+
+    <Window name="STMSZV_Z_Channel_Fw" caption="Z - Forward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Z_ImageDisplayForward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_Z_Channel_Bw" caption="Z - Backward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Z_ImageDisplayBackward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_I_Channel_Fw" caption="I - Forward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_I_ImageDisplayForward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_I_Channel_Bw" caption="I - Backward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_I_ImageDisplayBackward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_Aux1_Channel_Fw" caption="Aux1 - Forward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux1_ImageDisplayForward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_Aux1_Channel_Bw" caption="Aux1 - Backward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux1_ImageDisplayBackward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
+    </Window>	
+
+    <Window name="STMSZV_Aux2_Channel_Fw" caption="Aux2 - Forward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux2_ImageDisplayForward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_Aux2_Channel_Bw" caption="Aux2 - Backward">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux2_ImageDisplayBackward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
+    </Window>
+
+    <!-- Spectroscopy displays -->
+
+    <Window name="STMSZV_Z_V_Spec" caption="Z(V)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Z_V_Spec_Display" experimentElementInstanceName="Z_V" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_I_V_Spec" caption="I(V)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_I_V_Spec_Display" experimentElementInstanceName="I_V" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_I_Z_Spec" caption="I(Z)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_I_Z_Spec_Display" experimentElementInstanceName="I_Z" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_Aux1_V_Spec" caption="Aux1(V)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux1_V_Spec_Display" experimentElementInstanceName="Aux1_V" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_Aux1_Z_Spec" caption="Aux1(Z)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux1_Z_Spec_Display" experimentElementInstanceName="Aux1_Z" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_Aux2_V_Spec" caption="Aux2(V)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux2_V_Spec_Display" experimentElementInstanceName="Aux2_V" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_Aux2_Z_Spec" caption="Aux2(Z)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux2_Z_Spec_Display" experimentElementInstanceName="Aux2_Z" panelType="MultiCurveDisplay"/>
+    </Window>
+
+    <Window name="STMSZV_CITS_I_Spec" caption="I(V=const)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_CITS_I_Spec_Display" experimentElementInstanceName="I_V" panelType="2D_Display"/>
+    </Window>
+
+    <Window name="STMSZV_CITS_Aux2_V_Spec" caption="Aux2(V=const)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_CITS_Aux2_V_Spec_Display" experimentElementInstanceName="Aux2_V" panelType="2D_Display"/>
+    </Window>
+
+    <!-- Channel(t) displays -->
+
+    <Window name="STMSZV_Z_t" caption="Z(t)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Z_t_Display" experimentElementInstanceName="Z_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="STMSZV_Clock1" experimentElementInstanceName="Clock1" panelType="BasicClock"/>
+    </Window>
+
+    <Window name="STMSZV_I_t" caption="I(t)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_I_t_Display" experimentElementInstanceName="I_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="STMSZV_Clock2" experimentElementInstanceName="Clock2" panelType="BasicClock"/>
+    </Window>
+
+    <Window name="STMSZV_Aux2_t" caption="Aux2(t)">
+      <Layout border="noFrame" spacing="10">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_Aux2_t_Display" experimentElementInstanceName="Aux2_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="STMSZV_Clock3" experimentElementInstanceName="Clock3" panelType="BasicClock"/>
+    </Window>
+
+    <Window name="STMSZV_USCBStimulus" caption="SASS (U-SCB) DAC Options">
+      <Layout border="noFrame">
+        <BoxSpecification alignment="auto" direction="vertical"/>
+      </Layout>
+      <Panel name="STMSZV_ServicePanelDC" experimentElementInstanceName="USCBService" panelType="DacControl"/>
+      <Panel name="STMSZV_ServicePanelDC2" experimentElementInstanceName="USCBService" panelType="Dac2Control"/>
+      <Stretch value="10"/>
+    </Window>
+
+    <WindowGroup name="STMSZV_Window_Group_1" caption="STM Spectroscopy Z(V)" icon="ExpUni2" primaryWindow="STMSZV_XYScanner">
+      <WindowRef windowRef="STMSZV_ChannelList"/>
+      <WindowRef windowRef="STMSZV_TipConditioning"/>
+      <WindowRef windowRef="STMSZV_XYScanner"/>
+      <WindowRef windowRef="STMSZV_ZControl"/>
+      <WindowRef windowRef="STMSZV_Spectroscopy"/>
+      <WindowRef windowRef="STMSZV_ExternalInputs"/>
+      <WindowRef windowRef="STMSZV_StageCalibration"/>
+      <WindowRef windowRef="STMSZV_CoarseControl"/>
+      <WindowRef windowRef="STMSZV_USCBStimulus"/>
+    </WindowGroup>
+
+    <WindowGroup name="STMSZV_Window_Group_2" caption="Imaging" icon="ExpUni2%NOTOOLBAR">
+      <WindowRef windowRef="STMSZV_Z_Channel_Fw"/>
+      <WindowRef windowRef="STMSZV_Z_Channel_Bw"/>
+      <WindowRef windowRef="STMSZV_I_Channel_Fw"/>
+      <WindowRef windowRef="STMSZV_I_Channel_Bw"/>
+      <WindowRef windowRef="STMSZV_Aux1_Channel_Fw"/>
+      <WindowRef windowRef="STMSZV_Aux1_Channel_Bw"/>
+      <WindowRef windowRef="STMSZV_Aux2_Channel_Fw"/>
+      <WindowRef windowRef="STMSZV_Aux2_Channel_Bw"/>
+    </WindowGroup>
+
+    <WindowGroup name="STMSZV_Window_Group_3" caption="Spectroscopy" icon="ExpUni2%NOTOOLBAR">
+      <WindowRef windowRef="STMSZV_I_V_Spec"/>
+      <WindowRef windowRef="STMSZV_Aux1_V_Spec"/>
+      <WindowRef windowRef="STMSZV_Aux2_V_Spec"/>
+      <WindowRef windowRef="STMSZV_Z_V_Spec"/>
+      <WindowRef windowRef="STMSZV_I_Z_Spec"/>
+      <WindowRef windowRef="STMSZV_Aux1_Z_Spec"/>
+      <WindowRef windowRef="STMSZV_Aux2_Z_Spec"/>
+      <WindowRef windowRef="STMSZV_CITS_I_Spec"/>
+      <WindowRef windowRef="STMSZV_CITS_Aux2_V_Spec"/>
+    </WindowGroup>
+
+    <WindowGroup name="STMSZV_Window_Group_4" caption="Continuous Signals" icon="ExpUni2%NOTOOLBAR">
+      <WindowRef windowRef="STMSZV_Z_t"/>
+      <WindowRef windowRef="STMSZV_I_t"/>
+      <WindowRef windowRef="STMSZV_Aux2_t"/>
+    </WindowGroup>
+
+  </WindowDescription>
+
+</Experiment>
