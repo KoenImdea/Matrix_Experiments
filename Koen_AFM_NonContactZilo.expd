@@ -127,7 +127,6 @@
       <Panel name="KOEN_AFMNCZ_ZV_I_Z_Activation" experimentElementInstanceName="I_Z" panelType="ChannelControl"/>
       <Panel name="KOEN_AFMNCZ_ZV_I_t_Activation" experimentElementInstanceName="I_t" panelType="ChannelControl"/>
       <Panel name="KOEN_AFMNCZ_ZV_Z_Activation" experimentElementInstanceName="Z" panelType="ChannelControl"/>
-      <Panel name="KOEN_AFMNCZ_ZV_Z_V_Activation" experimentElementInstanceName="Z_V" panelType="ChannelControl"/>
       <Panel name="KOEN_AFMNCZ_ZV_Z_t_Activation" experimentElementInstanceName="Z_t" panelType="ChannelControl"/>
       <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_Activation" experimentElementInstanceName="I_Reg_Mon" panelType="ChannelControl"/>
       <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_t_Activation" experimentElementInstanceName="I_Reg_Mon_t" panelType="ChannelControl"/>
@@ -303,13 +302,6 @@
     </Window>
 
     <!-- Spectroscopy displays -->
-
-    <Window name="KOEN_AFMNCZ_ZV_Z_V_Spec" caption="Z(V)">
-      <Layout border="noFrame" spacing="10">
-        <BoxSpecification alignment="auto" direction="vertical"/>
-      </Layout>
-      <Panel name="KOEN_AFMNCZ_ZV_Z_V_Spec_Display" experimentElementInstanceName="Z_V" panelType="MultiCurveDisplay"/>
-    </Window>
 
     <Window name="KOEN_AFMNCZ_ZV_I_V_Spec" caption="I(V)">
       <Layout border="noFrame" spacing="10">
@@ -551,7 +543,6 @@
     <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_3" caption="Spectroscopy" icon="Spectroscopy%NOTOOLBAR">
       <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_V_Spec"/>
       <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Z_Spec"/>
-      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Z_V_Spec"/>
       <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_V_Spec"/>
       <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_Z_Spec"/>
       <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_V_Spec"/>

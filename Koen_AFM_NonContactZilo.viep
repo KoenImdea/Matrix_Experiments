@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ViewSystemParameters xmlns="http://www.scientaomicron.com/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <View name="Z_V_Spec">
-    <Processor name="CurveAverager">
-      <Parameter name="On">
-        <Boolean>false</Boolean>
-      </Parameter>
-    </Processor>
-    <Processor name="LineDifferentiator">
-      <Parameter name="On">
-        <Boolean>false</Boolean>
-      </Parameter>
-      <Parameter name="Percentage">
-        <Double>100</Double>
-      </Parameter>
-    </Processor>
-  </View>
-
   <View name="I_Fw">
     <Processor name="PacketAligner">
       <Parameter name="On">
