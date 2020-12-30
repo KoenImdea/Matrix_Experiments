@@ -310,13 +310,13 @@
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="Aux1_V_Spec" type="SPMSpectroscopy_V3" source="Aux1(V)" target="AFMNCZAC_Aux1_V_Spec_Display">
+  <View name="Aux1_V_Spec" type="SPMSpectroscopy_V3" source="Δf(V)" target="AFMNCZAC_Aux1_V_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="Aux1_Z_Spec" type="SPMSpectroscopy_V3" source="Aux1(Z)" target="AFMNCZAC_Aux1_Z_Spec_Display">
+  <View name="Aux1_Z_Spec" type="SPMSpectroscopy_V3" source="Δf(Z)" target="AFMNCZAC_Aux1_Z_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
