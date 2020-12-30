@@ -1316,6 +1316,31 @@
     </Group>
   </ExperimentElementInstance>
 
+  <ExperimentElementInstance name="Z_V" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Auto_Flush_Period">
+        <Double>0.1</Double>
+      </Parameter>
+    </Group>
+    <Group name="Active">
+      <Parameter name="Auto_Oversampling">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Enable" monitored="true">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Enable_Storing">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Initial_Delay" monitored="true">
+        <Double>1e-005</Double>
+      </Parameter>
+      <Parameter name="Oversampling_Factor" monitored="true">
+        <Cardinal>199936</Cardinal>
+      </Parameter>
+    </Group>
+  </ExperimentElementInstance>
+
   <ExperimentElementInstance name="I_Reg" elementType="Channel" catalogue="SPMBasic">
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
