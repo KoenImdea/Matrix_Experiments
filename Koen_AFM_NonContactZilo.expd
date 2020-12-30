@@ -16,565 +16,565 @@
 
   <WindowDescription>
 
-    <Window name="AFMNCZAC_XYScanner" caption="XY Scanner">
+    <Window name="KOEN_AFMNCZ_ZV_XYScanner" caption="XY Scanner">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_ScanParameters" experimentElementInstanceName="XYScanner" panelType="ScanParameter"/>
-      <Panel name="AFMNCZAC_LineDelay" experimentElementInstanceName="XYScanner" panelType="LineDelay"/>
-      <Panel name="AFMNCZAC_XYArea" experimentElementInstanceName="XYScanner" panelType="Area"/>
-      <Panel name="AFMNCZAC_DriftCompensation" experimentElementInstanceName="XYScanner" panelType="DriftCompensation"/>
+      <Panel name="KOEN_AFMNCZ_ZV_ScanParameters" experimentElementInstanceName="XYScanner" panelType="ScanParameter"/>
+      <Panel name="KOEN_AFMNCZ_ZV_LineDelay" experimentElementInstanceName="XYScanner" panelType="LineDelay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_XYArea" experimentElementInstanceName="XYScanner" panelType="Area"/>
+      <Panel name="KOEN_AFMNCZ_ZV_DriftCompensation" experimentElementInstanceName="XYScanner" panelType="DriftCompensation"/>
     </Window>
 
-    <Window name="AFMNCZAC_ZControl" caption="Z Regulation">
+    <Window name="KOEN_AFMNCZ_ZV_ZControl" caption="Z Regulation">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_GapVoltageControl" experimentElementInstanceName="GapVoltageControl" panelType="Control"/>
-      <Panel name="AFMNCZAC_VGapFilter" experimentElementInstanceName="STMSCBService" panelType="VGapFilter"/>
-      <GuiContainer name="AFMNCZAC_ZControl_Regulator_Row">
+      <Panel name="KOEN_AFMNCZ_ZV_GapVoltageControl" experimentElementInstanceName="GapVoltageControl" panelType="Control"/>
+      <Panel name="KOEN_AFMNCZ_ZV_VGapFilter" experimentElementInstanceName="STMSCBService" panelType="VGapFilter"/>
+      <GuiContainer name="KOEN_AFMNCZ_ZV_ZControl_Regulator_Row">
         <Layout border="noFrame" spacing="7">
           <BoxSpecification alignment="auto" direction="horizontal"/>
         </Layout>
-        <Panel name="AFMNCZAC_Regulator_ZMeter" experimentElementInstanceName="Regulator" panelType="ZMeter"/>
-        <GuiContainer name="AFMNCZAC_ZControl_Regulator_Column">
+        <Panel name="KOEN_AFMNCZ_ZV_Regulator_ZMeter" experimentElementInstanceName="Regulator" panelType="ZMeter"/>
+        <GuiContainer name="KOEN_AFMNCZ_ZV_ZControl_Regulator_Column">
           <Layout border="noFrame" spacing="7">
             <BoxSpecification alignment="auto" direction="vertical"/>
           </Layout>
-          <Panel name="AFMNCZAC_FeedbackLoopBasic" experimentElementInstanceName="Regulator" panelType="FeedbackLoopBasic"/>
-          <Panel name="AFMNCZAC_FeedbackLoopZOffset" experimentElementInstanceName="Regulator" panelType="FeedbackLoopZOffset"/>
-          <Panel name="AFMNCZAC_TipProtection" experimentElementInstanceName="Regulator" panelType="RegulatorTipProtection"/>
-          <Panel name="AFMNCZAC_ZPlane" experimentElementInstanceName="XYScanner" panelType="ZPlane"/>
-          <Panel name="AFMNCZAC_FeedbackLoopParameter" experimentElementInstanceName="Regulator" panelType="FeedbackLoopParameterLGP"/>
-          <Panel name="AFMNCZAC_AutoApproach" experimentElementInstanceName="PiezoControl" panelType="AutoApproach"/>
+          <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopBasic" experimentElementInstanceName="Regulator" panelType="FeedbackLoopBasic"/>
+          <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopZOffset" experimentElementInstanceName="Regulator" panelType="FeedbackLoopZOffset"/>
+          <Panel name="KOEN_AFMNCZ_ZV_TipProtection" experimentElementInstanceName="Regulator" panelType="RegulatorTipProtection"/>
+          <Panel name="KOEN_AFMNCZ_ZV_ZPlane" experimentElementInstanceName="XYScanner" panelType="ZPlane"/>
+          <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopParameter" experimentElementInstanceName="Regulator" panelType="FeedbackLoopParameterLGP"/>
+          <Panel name="KOEN_AFMNCZ_ZV_AutoApproach" experimentElementInstanceName="PiezoControl" panelType="AutoApproach"/>
         </GuiContainer>
       </GuiContainer>
-      <GuiContainer name="AFMNCZAC_InputFilter_Regulator_Row">
+      <GuiContainer name="KOEN_AFMNCZ_ZV_InputFilter_Regulator_Row">
         <Layout spacing="7">
           <BoxSpecification alignment="auto" direction="horizontal"/>
         </Layout>
-        <Panel name="AFMNCZAC_Aux1Filter" experimentElementInstanceName="DRBService" panelType="Aux1Filter"/>
-        <Panel name="AFMNCZAC_IRegulatorFilter" experimentElementInstanceName="STMSCBService" panelType="IRegulatorFilter"/>
+        <Panel name="KOEN_AFMNCZ_ZV_Aux1Filter" experimentElementInstanceName="DRBService" panelType="Aux1Filter"/>
+        <Panel name="KOEN_AFMNCZ_ZV_IRegulatorFilter" experimentElementInstanceName="STMSCBService" panelType="IRegulatorFilter"/>
       </GuiContainer>
-      <Panel name="AFMNCZAC_PFU" experimentElementInstanceName="StageCalibration" panelType="PFU"/>
+      <Panel name="KOEN_AFMNCZ_ZV_PFU" experimentElementInstanceName="StageCalibration" panelType="PFU"/>
     </Window>
 
-    <Window name="AFMNCZAC_TipConditioning" caption="Tip Conditioning">
+    <Window name="KOEN_AFMNCZ_ZV_TipConditioning" caption="Tip Conditioning">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_TipConditioningPulse" experimentElementInstanceName="GapVoltageControl" panelType="Pulse"/>
-      <Panel name="AFMNCZAC_TipConditioningZRamp" experimentElementInstanceName="Regulator" panelType="TipPreparationZRamp"/>
+      <Panel name="KOEN_AFMNCZ_ZV_TipConditioningPulse" experimentElementInstanceName="GapVoltageControl" panelType="Pulse"/>
+      <Panel name="KOEN_AFMNCZ_ZV_TipConditioningZRamp" experimentElementInstanceName="Regulator" panelType="TipPreparationZRamp"/>
     </Window>
 
-    <Window name="AFMNCZAC_CoarseControl" caption="Coarse Control">
+    <Window name="KOEN_AFMNCZ_ZV_CoarseControl" caption="Coarse Control">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_TipSampleControl" experimentElementInstanceName="PiezoControl" panelType="TipSampleControl"/>
-      <Panel name="AFMNCZAC_PiezoOption" experimentElementInstanceName="PiezoControl" panelType="Option"/>
+      <Panel name="KOEN_AFMNCZ_ZV_TipSampleControl" experimentElementInstanceName="PiezoControl" panelType="TipSampleControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_PiezoOption" experimentElementInstanceName="PiezoControl" panelType="Option"/>
     </Window>
 
-    <Window name="AFMNCZAC_ExternalInputs" caption="External Inputs">
+    <Window name="KOEN_AFMNCZ_ZV_ExternalInputs" caption="External Inputs">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_SelectVModAndVExtPanel" experimentElementInstanceName="STMSCBService" panelType="SelectVModAndVExt"/>
-      <Panel name="AFMNCZAC_ZExtPanel" experimentElementInstanceName="DRBService" panelType="ZExt"/>
+      <Panel name="KOEN_AFMNCZ_ZV_SelectVModAndVExtPanel" experimentElementInstanceName="STMSCBService" panelType="SelectVModAndVExt"/>
+      <Panel name="KOEN_AFMNCZ_ZV_ZExtPanel" experimentElementInstanceName="DRBService" panelType="ZExt"/>
       <Stretch/>
     </Window>
 
-    <Window name="AFMNCZAC_Spectroscopy" caption="Spectroscopy">
+    <Window name="KOEN_AFMNCZ_ZV_Spectroscopy" caption="Spectroscopy">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_SubgridPanel" experimentElementInstanceName="XYScanner" panelType="Subgrid"/>
-      <Panel name="AFMNCZAC_SpectroscopyPanel" experimentElementInstanceName="Spectroscopy" panelType="Basic"/>
-      <GuiContainer name="AFMNCZAC_Spectroscopy_Top_Row_Container">
+      <Panel name="KOEN_AFMNCZ_ZV_SubgridPanel" experimentElementInstanceName="XYScanner" panelType="Subgrid"/>
+      <Panel name="KOEN_AFMNCZ_ZV_SpectroscopyPanel" experimentElementInstanceName="Spectroscopy" panelType="Basic"/>
+      <GuiContainer name="KOEN_AFMNCZ_ZV_Spectroscopy_Top_Row_Container">
         <Layout border="noFrame" spacing="2">
           <BoxSpecification alignment="auto" direction="horizontal"/>
         </Layout>
-        <Panel name="AFMNCZAC_GapPreset" experimentElementInstanceName="Spectroscopy" panelType="GapPreset"/>
-        <Panel name="AFMNCZAC_SpecialParameter" experimentElementInstanceName="Regulator" panelType="SpecialParameterButtonLGP"/>
+        <Panel name="KOEN_AFMNCZ_ZV_GapPreset" experimentElementInstanceName="Spectroscopy" panelType="GapPreset"/>
+        <Panel name="KOEN_AFMNCZ_ZV_SpecialParameter" experimentElementInstanceName="Regulator" panelType="SpecialParameterButtonLGP"/>
         <Stretch value="10"/>
       </GuiContainer>
     </Window>
 
-    <Window name="AFMNCZAC_AtomManipulation" caption="Atom Manipulation">
+    <Window name="KOEN_AFMNCZ_ZV_AtomManipulation" caption="Atom Manipulation">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_AtmAControl" experimentElementInstanceName="AtMaControl" panelType="AtMaControl"/>
-      <Panel name="AFMNCZAC_SpecialParameter2" experimentElementInstanceName="Regulator" panelType="SpecialParameter"/>
-      <Panel name="AFMNCZAC_SpecialZOffset" experimentElementInstanceName="Regulator" panelType="SpecialZOffset"/>
+      <Panel name="KOEN_AFMNCZ_ZV_AtmAControl" experimentElementInstanceName="AtMaControl" panelType="AtMaControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_SpecialParameter2" experimentElementInstanceName="Regulator" panelType="SpecialParameter"/>
+      <Panel name="KOEN_AFMNCZ_ZV_SpecialZOffset" experimentElementInstanceName="Regulator" panelType="SpecialZOffset"/>
       <Stretch value="100"/>
     </Window>
 
-    <Window name="AFMNCZAC_StageCalibration" caption="Stage Calibration">
+    <Window name="KOEN_AFMNCZ_ZV_StageCalibration" caption="Stage Calibration">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_XYZCalibration" experimentElementInstanceName="StageCalibration" panelType="Calibration"/>
+      <Panel name="KOEN_AFMNCZ_ZV_XYZCalibration" experimentElementInstanceName="StageCalibration" panelType="Calibration"/>
     </Window>
 
-    <Window name="AFMNCZAC_ChannelList" caption="Channel List">
+    <Window name="KOEN_AFMNCZ_ZV_ChannelList" caption="Channel List">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
 
       <!-- ICU channels -->
-      <Panel name="AFMNCZAC_I_Activation" experimentElementInstanceName="I" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_I_V_Activation" experimentElementInstanceName="I_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_I_Z_Activation" experimentElementInstanceName="I_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_I_t_Activation" experimentElementInstanceName="I_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Z_Activation" experimentElementInstanceName="Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Z_t_Activation" experimentElementInstanceName="Z_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_I_Reg_Mon_Activation" experimentElementInstanceName="I_Reg_Mon" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_I_Reg_Mon_t_Activation" experimentElementInstanceName="I_Reg_Mon_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux1_Activation" experimentElementInstanceName="Aux1" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux1_V_Activation" experimentElementInstanceName="Aux1_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux1_Z_Activation" experimentElementInstanceName="Aux1_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux1_t_Activation" experimentElementInstanceName="Aux1_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux2_Activation" experimentElementInstanceName="Aux2" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux2_V_Activation" experimentElementInstanceName="Aux2_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux2_Z_Activation" experimentElementInstanceName="Aux2_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux2_t_Activation" experimentElementInstanceName="Aux2_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Activation" experimentElementInstanceName="I" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_V_Activation" experimentElementInstanceName="I_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Z_Activation" experimentElementInstanceName="I_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_t_Activation" experimentElementInstanceName="I_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_Activation" experimentElementInstanceName="Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_t_Activation" experimentElementInstanceName="Z_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_Activation" experimentElementInstanceName="I_Reg_Mon" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_t_Activation" experimentElementInstanceName="I_Reg_Mon_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_Activation" experimentElementInstanceName="Aux1" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_V_Activation" experimentElementInstanceName="Aux1_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_Z_Activation" experimentElementInstanceName="Aux1_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_t_Activation" experimentElementInstanceName="Aux1_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_Activation" experimentElementInstanceName="Aux2" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_V_Activation" experimentElementInstanceName="Aux2_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_Z_Activation" experimentElementInstanceName="Aux2_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_t_Activation" experimentElementInstanceName="Aux2_t" panelType="ChannelControl"/>
 
       <Stretch/>
     </Window>
 
-    <Window name="AFMNCZAC_ChannelListAtma" caption="Channel List AtomManipulation">
+    <Window name="KOEN_AFMNCZ_ZV_ChannelListAtma" caption="Channel List AtomManipulation">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <!-- AtomManipulation channels -->
-      <Panel name="AFMNCZAC_I_r_Activation" experimentElementInstanceName="I_r" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Z_r_Activation" experimentElementInstanceName="Z_r" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_Aux2_r_Activation" experimentElementInstanceName="Aux2_r" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_r_Activation" experimentElementInstanceName="I_r" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_r_Activation" experimentElementInstanceName="Z_r" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_r_Activation" experimentElementInstanceName="Aux2_r" panelType="ChannelControl"/>
     </Window>
 
-    <Window name="AFMNCZAC_ChannelListSass" caption="Channel List SASS">
+    <Window name="KOEN_AFMNCZ_ZV_ChannelListSass" caption="Channel List SASS">
       <Layout border="noFrame" spacing="7">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_Activation" experimentElementInstanceName="A1" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A2_Activation" experimentElementInstanceName="A2" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A3_Activation" experimentElementInstanceName="A3" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A4_Activation" experimentElementInstanceName="A4" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A1_V_Activation" experimentElementInstanceName="A1_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A2_V_Activation" experimentElementInstanceName="A2_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A3_V_Activation" experimentElementInstanceName="A3_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A4_V_Activation" experimentElementInstanceName="A4_V" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A1_Z_Activation" experimentElementInstanceName="A1_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A2_Z_Activation" experimentElementInstanceName="A2_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A3_Z_Activation" experimentElementInstanceName="A3_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A4_Z_Activation" experimentElementInstanceName="A4_Z" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A1_t_Activation" experimentElementInstanceName="A1_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A2_t_Activation" experimentElementInstanceName="A2_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A3_t_Activation" experimentElementInstanceName="A3_t" panelType="ChannelControl"/>
-      <Panel name="AFMNCZAC_A4_t_Activation" experimentElementInstanceName="A4_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_Activation" experimentElementInstanceName="A1" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_Activation" experimentElementInstanceName="A2" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_Activation" experimentElementInstanceName="A3" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_Activation" experimentElementInstanceName="A4" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_V_Activation" experimentElementInstanceName="A1_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_V_Activation" experimentElementInstanceName="A2_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_V_Activation" experimentElementInstanceName="A3_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_V_Activation" experimentElementInstanceName="A4_V" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_Z_Activation" experimentElementInstanceName="A1_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_Z_Activation" experimentElementInstanceName="A2_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_Z_Activation" experimentElementInstanceName="A3_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_Z_Activation" experimentElementInstanceName="A4_Z" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_t_Activation" experimentElementInstanceName="A1_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_t_Activation" experimentElementInstanceName="A2_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_t_Activation" experimentElementInstanceName="A3_t" panelType="ChannelControl"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_t_Activation" experimentElementInstanceName="A4_t" panelType="ChannelControl"/>
       <Stretch/>
     </Window>
 
-    <Window name="AFMNCZAC_Z_Channel_Fw" caption="Z - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_Z_Channel_Fw" caption="Z - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Z_ImageDisplayForward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_ImageDisplayForward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Z_Channel_Bw" caption="Z - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_Z_Channel_Bw" caption="Z - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Z_ImageDisplayBackward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_ImageDisplayBackward_1" experimentElementInstanceName="Z" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Channel_Fw" caption="I - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_I_Channel_Fw" caption="I - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_ImageDisplayForward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_ImageDisplayForward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Channel_Bw" caption="I - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_I_Channel_Bw" caption="I - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_ImageDisplayBackward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_ImageDisplayBackward_1" experimentElementInstanceName="I" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Reg_Mon_Channel_Fw" caption="I Reg Mon - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_I_Reg_Mon_Channel_Fw" caption="I Reg Mon - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_Reg_Mon_ImageDisplayForward_1" experimentElementInstanceName="I_Reg_Mon" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_ImageDisplayForward_1" experimentElementInstanceName="I_Reg_Mon" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Reg_Mon_Channel_Bw" caption="I Reg Mon - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_I_Reg_Mon_Channel_Bw" caption="I Reg Mon - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_Reg_Mon_ImageDisplayBackward_1" experimentElementInstanceName="I_Reg_Mon" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_ImageDisplayBackward_1" experimentElementInstanceName="I_Reg_Mon" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Channel_Fw" caption="Δf - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_Aux1_Channel_Fw" caption="Δf - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux1_ImageDisplayForward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_ImageDisplayForward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Channel_Bw" caption="Δf - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_Aux1_Channel_Bw" caption="Δf - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux1_ImageDisplayBackward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_ImageDisplayBackward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_Channel_Fw" caption="Aux2 - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_Channel_Fw" caption="Aux2 - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_ImageDisplayForward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_ImageDisplayForward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_Channel_Bw" caption="Aux2 - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_Channel_Bw" caption="Aux2 - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_ImageDisplayBackward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_ImageDisplayBackward_1" experimentElementInstanceName="Aux2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A1_Channel_Fw" caption="A1 - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_A1_Channel_Fw" caption="A1 - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_ImageDisplayForward_1" experimentElementInstanceName="A1" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_ImageDisplayForward_1" experimentElementInstanceName="A1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A1_Channel_Bw" caption="A1 - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_A1_Channel_Bw" caption="A1 - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_ImageDisplayBackward_1" experimentElementInstanceName="A1" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_ImageDisplayBackward_1" experimentElementInstanceName="A1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Channel_Fw" caption="Phase - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_A2_Channel_Fw" caption="Phase - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A2_ImageDisplayForward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_ImageDisplayForward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Channel_Bw" caption="Phase - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_A2_Channel_Bw" caption="Phase - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A2_ImageDisplayBackward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_ImageDisplayBackward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Channel_Fw" caption="Amplitude - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_A3_Channel_Fw" caption="Amplitude - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A3_ImageDisplayForward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_ImageDisplayForward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Channel_Bw" caption="Amplitude - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_A3_Channel_Bw" caption="Amplitude - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A3_ImageDisplayBackward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_ImageDisplayBackward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Channel_Fw" caption="Damping - Forward">
+    <Window name="KOEN_AFMNCZ_ZV_A4_Channel_Fw" caption="Damping - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A4_ImageDisplayForward_1" experimentElementInstanceName="A4" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_ImageDisplayForward_1" experimentElementInstanceName="A4" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Channel_Bw" caption="Damping - Backward">
+    <Window name="KOEN_AFMNCZ_ZV_A4_Channel_Bw" caption="Damping - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A4_ImageDisplayBackward_1" experimentElementInstanceName="A4" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_ImageDisplayBackward_1" experimentElementInstanceName="A4" panelType="2D_Display"/>
     </Window>
 
     <!-- Spectroscopy displays -->
 
-    <Window name="AFMNCZAC_I_V_Spec" caption="I(V)">
+    <Window name="KOEN_AFMNCZ_ZV_I_V_Spec" caption="I(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_V_Spec_Display" experimentElementInstanceName="I_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_V_Spec_Display" experimentElementInstanceName="I_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Z_Spec" caption="I(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_I_Z_Spec" caption="I(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_Z_Spec_Display" experimentElementInstanceName="I_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Z_Spec_Display" experimentElementInstanceName="I_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_V_Spec" caption="Δf(V)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux1_V_Spec" caption="Δf(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux1_V_Spec_Display" experimentElementInstanceName="Aux1_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_V_Spec_Display" experimentElementInstanceName="Aux1_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Z_Spec" caption="Δf(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux1_Z_Spec" caption="Δf(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux1_Z_Spec_Display" experimentElementInstanceName="Aux1_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_Z_Spec_Display" experimentElementInstanceName="Aux1_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_V_Spec" caption="Aux2(V)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_V_Spec" caption="Aux2(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_V_Spec_Display" experimentElementInstanceName="Aux2_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_V_Spec_Display" experimentElementInstanceName="Aux2_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_Z_Spec" caption="Aux2(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_Z_Spec" caption="Aux2(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_Z_Spec_Display" experimentElementInstanceName="Aux2_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_Z_Spec_Display" experimentElementInstanceName="Aux2_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_CITS_I_Spec" caption="I(V=const)">
+    <Window name="KOEN_AFMNCZ_ZV_CITS_I_Spec" caption="I(V=const)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_CITS_I_Spec_Display" experimentElementInstanceName="I_V" panelType="2D_Display"/>
+      <Panel name="KOEN_AFMNCZ_ZV_CITS_I_Spec_Display" experimentElementInstanceName="I_V" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A1_V_Spec" caption="A1(V)">
+    <Window name="KOEN_AFMNCZ_ZV_A1_V_Spec" caption="A1(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_V_Spec_Display" experimentElementInstanceName="A1_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_V_Spec_Display" experimentElementInstanceName="A1_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A1_Z_Spec" caption="A1(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_A1_Z_Spec" caption="A1(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_Z_Spec_Display" experimentElementInstanceName="A1_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_Z_Spec_Display" experimentElementInstanceName="A1_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_V_Spec" caption="Phase(V)">
+    <Window name="KOEN_AFMNCZ_ZV_A2_V_Spec" caption="Phase(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A2_V_Spec_Display" experimentElementInstanceName="A2_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_V_Spec_Display" experimentElementInstanceName="A2_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Z_Spec" caption="Phase(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_A2_Z_Spec" caption="Phase(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A2_Z_Spec_Display" experimentElementInstanceName="A2_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_Z_Spec_Display" experimentElementInstanceName="A2_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_V_Spec" caption="Amplitude(V)">
+    <Window name="KOEN_AFMNCZ_ZV_A3_V_Spec" caption="Amplitude(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A3_V_Spec_Display" experimentElementInstanceName="A3_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_V_Spec_Display" experimentElementInstanceName="A3_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Z_Spec" caption="Amplitude(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_A3_Z_Spec" caption="Amplitude(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A3_Z_Spec_Display" experimentElementInstanceName="A3_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_Z_Spec_Display" experimentElementInstanceName="A3_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_V_Spec" caption="Damping(V)">
+    <Window name="KOEN_AFMNCZ_ZV_A4_V_Spec" caption="Damping(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A4_V_Spec_Display" experimentElementInstanceName="A4_V" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_V_Spec_Display" experimentElementInstanceName="A4_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Z_Spec" caption="Damping(Z)">
+    <Window name="KOEN_AFMNCZ_ZV_A4_Z_Spec" caption="Damping(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A4_Z_Spec_Display" experimentElementInstanceName="A4_Z" panelType="MultiCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_Z_Spec_Display" experimentElementInstanceName="A4_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
     <!-- Atom Manipulation displays -->
 
-    <Window name="AFMNCZAC_Z_r" caption="Z(r)">
+    <Window name="KOEN_AFMNCZ_ZV_Z_r" caption="Z(r)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Z_r_Display" experimentElementInstanceName="Z_r" panelType="AtmaCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_r_Display" experimentElementInstanceName="Z_r" panelType="AtmaCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_r" caption="I(r)">
+    <Window name="KOEN_AFMNCZ_ZV_I_r" caption="I(r)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_r_Display" experimentElementInstanceName="I_r" panelType="AtmaCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_r_Display" experimentElementInstanceName="I_r" panelType="AtmaCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_r" caption="Aux2(r)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_r" caption="Aux2(r)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_r_Display" experimentElementInstanceName="Aux2_r" panelType="AtmaCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_r_Display" experimentElementInstanceName="Aux2_r" panelType="AtmaCurveDisplay"/>
     </Window>
 
     <!-- Channel(t) displays -->
 
-    <Window name="AFMNCZAC_Z_t" caption="Z(t)">
+    <Window name="KOEN_AFMNCZ_ZV_Z_t" caption="Z(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Z_t_Display" experimentElementInstanceName="Z_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock1" experimentElementInstanceName="Clock1" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Z_t_Display" experimentElementInstanceName="Z_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock1" experimentElementInstanceName="Clock1" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_t" caption="I(t)">
+    <Window name="KOEN_AFMNCZ_ZV_I_t" caption="I(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_t_Display" experimentElementInstanceName="I_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock5" experimentElementInstanceName="Clock5" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_t_Display" experimentElementInstanceName="I_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock5" experimentElementInstanceName="Clock5" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_I_Reg_Mon_t" caption="I Reg Mon(t)">
+    <Window name="KOEN_AFMNCZ_ZV_I_Reg_Mon_t" caption="I Reg Mon(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_I_Reg_Mon_t_Display" experimentElementInstanceName="I_Reg_Mon_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock2" experimentElementInstanceName="Clock2" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_I_Reg_Mon_t_Display" experimentElementInstanceName="I_Reg_Mon_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock2" experimentElementInstanceName="Clock2" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_t" caption="Δf(t)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux1_t" caption="Δf(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux1_t_Display" experimentElementInstanceName="Aux1_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock20" experimentElementInstanceName="Clock20" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux1_t_Display" experimentElementInstanceName="Aux1_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock20" experimentElementInstanceName="Clock20" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux2_t" caption="Aux2(t)">
+    <Window name="KOEN_AFMNCZ_ZV_Aux2_t" caption="Aux2(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_Aux2_t_Display" experimentElementInstanceName="Aux2_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock6" experimentElementInstanceName="Clock6" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Aux2_t_Display" experimentElementInstanceName="Aux2_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock6" experimentElementInstanceName="Clock6" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A1_t" caption="A1(t)">
+    <Window name="KOEN_AFMNCZ_ZV_A1_t" caption="A1(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A1_t_Display" experimentElementInstanceName="A1_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock21" experimentElementInstanceName="Clock21" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A1_t_Display" experimentElementInstanceName="A1_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock21" experimentElementInstanceName="Clock21" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_t" caption="Phase(t)">
+    <Window name="KOEN_AFMNCZ_ZV_A2_t" caption="Phase(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A2_t_Display" experimentElementInstanceName="A2_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock22" experimentElementInstanceName="Clock22" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A2_t_Display" experimentElementInstanceName="A2_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock22" experimentElementInstanceName="Clock22" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_t" caption="Amplitude(t)">
+    <Window name="KOEN_AFMNCZ_ZV_A3_t" caption="Amplitude(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A3_t_Display" experimentElementInstanceName="A3_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock23" experimentElementInstanceName="Clock23" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A3_t_Display" experimentElementInstanceName="A3_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock23" experimentElementInstanceName="Clock23" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_t" caption="Damping(t)">
+    <Window name="KOEN_AFMNCZ_ZV_A4_t" caption="Damping(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
-      <Panel name="AFMNCZAC_A4_t_Display" experimentElementInstanceName="A4_t" panelType="ScrollCurveDisplay"/>
-      <Panel name="AFMNCZAC_Clock24" experimentElementInstanceName="Clock24" panelType="BasicClock"/>
+      <Panel name="KOEN_AFMNCZ_ZV_A4_t_Display" experimentElementInstanceName="A4_t" panelType="ScrollCurveDisplay"/>
+      <Panel name="KOEN_AFMNCZ_ZV_Clock24" experimentElementInstanceName="Clock24" panelType="BasicClock"/>
     </Window>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_1" caption="Koen AFM NonContact Analog" icon="AfmNonContactZilo.png" primaryWindow="AFMNCZAC_XYScanner">
-      <WindowRef windowRef="AFMNCZAC_ChannelList"/>
-      <WindowRef windowRef="AFMNCZAC_ChannelListAtma"/>
-      <WindowRef windowRef="AFMNCZAC_ChannelListSass"/>
-      <WindowRef windowRef="AFMNCZAC_TipConditioning"/>
-      <WindowRef windowRef="AFMNCZAC_XYScanner"/>
-      <WindowRef windowRef="AFMNCZAC_ZControl"/>
-      <WindowRef windowRef="AFMNCZAC_Spectroscopy"/>
-      <WindowRef windowRef="AFMNCZAC_ExternalInputs"/>
-      <WindowRef windowRef="AFMNCZAC_AtomManipulation"/>
-      <WindowRef windowRef="AFMNCZAC_StageCalibration"/>
-      <WindowRef windowRef="AFMNCZAC_CoarseControl"/>
+    <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_1" caption="Koen AFM NonContact Analog" icon="AfmNonContactZilo.png" primaryWindow="KOEN_AFMNCZ_ZV_XYScanner">
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_ChannelList"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_ChannelListAtma"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_ChannelListSass"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_TipConditioning"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_XYScanner"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_ZControl"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Spectroscopy"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_ExternalInputs"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_AtomManipulation"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_StageCalibration"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_CoarseControl"/>
     </WindowGroup>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_2" caption="Imaging" icon="AfmNonContactZilo.png%NOTOOLBAR">
-      <WindowRef windowRef="AFMNCZAC_I_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_I_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_Z_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_Z_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_I_Reg_Mon_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_I_Reg_Mon_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_Aux1_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_Aux1_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_A1_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_A1_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_A2_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_A2_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_A3_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_A3_Channel_Bw"/>
-      <WindowRef windowRef="AFMNCZAC_A4_Channel_Fw"/>
-      <WindowRef windowRef="AFMNCZAC_A4_Channel_Bw"/>
+    <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_2" caption="Imaging" icon="AfmNonContactZilo.png%NOTOOLBAR">
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Z_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Z_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Reg_Mon_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Reg_Mon_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A1_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A1_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A2_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A2_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A3_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A3_Channel_Bw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A4_Channel_Fw"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A4_Channel_Bw"/>
     </WindowGroup>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_3" caption="Spectroscopy" icon="Spectroscopy%NOTOOLBAR">
-      <WindowRef windowRef="AFMNCZAC_I_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_I_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_Aux1_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_Aux1_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_CITS_I_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A1_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A1_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A2_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A2_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A3_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A3_Z_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A4_V_Spec"/>
-      <WindowRef windowRef="AFMNCZAC_A4_Z_Spec"/>
+    <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_3" caption="Spectroscopy" icon="Spectroscopy%NOTOOLBAR">
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_CITS_I_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A1_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A1_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A2_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A2_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A3_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A3_Z_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A4_V_Spec"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A4_Z_Spec"/>
     </WindowGroup>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_4" caption="Atom Manipulation" icon="AtomManipulation%NOTOOLBAR">
-      <WindowRef windowRef="AFMNCZAC_Z_r"/>
-      <WindowRef windowRef="AFMNCZAC_I_r"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_r"/>
+    <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_4" caption="Atom Manipulation" icon="AtomManipulation%NOTOOLBAR">
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Z_r"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_r"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_r"/>
     </WindowGroup>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_5" caption="Continuous Signals" icon="AfmNonContactZilo.png%NOTOOLBAR">
-      <WindowRef windowRef="AFMNCZAC_I_t"/>
-      <WindowRef windowRef="AFMNCZAC_Z_t"/>
-      <WindowRef windowRef="AFMNCZAC_I_Reg_Mon_t"/>
-      <WindowRef windowRef="AFMNCZAC_Aux1_t"/>
-      <WindowRef windowRef="AFMNCZAC_Aux2_t"/>
-      <WindowRef windowRef="AFMNCZAC_A1_t"/>
-      <WindowRef windowRef="AFMNCZAC_A2_t"/>
-      <WindowRef windowRef="AFMNCZAC_A3_t"/>
-      <WindowRef windowRef="AFMNCZAC_A4_t"/>
+    <WindowGroup name="KOEN_AFMNCZ_ZV_Window_Group_5" caption="Continuous Signals" icon="AfmNonContactZilo.png%NOTOOLBAR">
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Z_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_I_Reg_Mon_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux1_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_Aux2_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A1_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A2_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A3_t"/>
+      <WindowRef windowRef="KOEN_AFMNCZ_ZV_A4_t"/>
     </WindowGroup>
 
   </WindowDescription>
