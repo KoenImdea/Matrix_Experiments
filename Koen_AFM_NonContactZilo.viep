@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewSystemParameters xmlns="http://www.scientaomicron.com/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <View name="I_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Z_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Automatic</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Automatic</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="AutoDriftCompensator">
+      <Parameter name="EvaluationCycle">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Z_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Automatic</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Automatic</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="AutoDriftCompensator">
+      <Parameter name="EvaluationCycle">
+        <Cardinal>1</Cardinal>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Z_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux1_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux1_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_Reg_Mon_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_Reg_Mon_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="I_Reg_Mon_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux1_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux1_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux1_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux2_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux2_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux2_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux2_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="Aux2_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A1_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A1_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A2_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A2_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A3_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A3_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A4_Fw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A4_Bw">
+    <Processor name="PacketAligner">
+      <Parameter name="On">
+        <Boolean>true</Boolean>
+      </Parameter>
+      <Parameter name="Alignment">
+        <String>Lines</String>
+      </Parameter>
+    </Processor>
+    <Processor name="LineSlopeSubtractor">
+      <Parameter name="SlopeSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Slope">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="OffsetSubtraction">
+        <String>Off</String>
+      </Parameter>
+      <Parameter name="Offset">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Despiker">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="SpikePercent">
+        <Double>1</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>80</Double>
+      </Parameter>
+    </Processor>
+    <Processor name="Statistics">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="Limiter">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="UpperLimit">
+        <Double>0</Double>
+      </Parameter>
+      <Parameter name="LowerLimit">
+        <Double>0</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A1_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A1_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A2_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A2_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A3_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A3_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A4_V_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A4_Z_Spec">
+    <Processor name="CurveAverager">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+    </Processor>
+    <Processor name="LineDifferentiator">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="Percentage">
+        <Double>100</Double>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A1_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A2_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A3_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+
+  <View name="A4_t">
+    <Processor name="PowerSpectrum">
+      <Parameter name="On">
+        <Boolean>false</Boolean>
+      </Parameter>
+      <Parameter name="OutputMode">
+        <String>Amplitude</String>
+      </Parameter>
+      <Parameter name="FilterWindow">
+        <String>Hann</String>
+      </Parameter>
+    </Processor>
+  </View>
+</ViewSystemParameters>
