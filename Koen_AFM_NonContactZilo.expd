@@ -260,42 +260,42 @@
       <Panel name="AFMNCZAC_A1_ImageDisplayBackward_1" experimentElementInstanceName="A1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Channel_Fw" caption="A2 - Forward">
+    <Window name="AFMNCZAC_A2_Channel_Fw" caption="Phase - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A2_ImageDisplayForward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Channel_Bw" caption="A2 - Backward">
+    <Window name="AFMNCZAC_A2_Channel_Bw" caption="Phase - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A2_ImageDisplayBackward_1" experimentElementInstanceName="A2" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Channel_Fw" caption="A3 - Forward">
+    <Window name="AFMNCZAC_A3_Channel_Fw" caption="Amplitude - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A3_ImageDisplayForward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Channel_Bw" caption="A3 - Backward">
+    <Window name="AFMNCZAC_A3_Channel_Bw" caption="Amplitude - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A3_ImageDisplayBackward_1" experimentElementInstanceName="A3" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Channel_Fw" caption="A4 - Forward">
+    <Window name="AFMNCZAC_A4_Channel_Fw" caption="Damping - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A4_ImageDisplayForward_1" experimentElementInstanceName="A4" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Channel_Bw" caption="A4 - Backward">
+    <Window name="AFMNCZAC_A4_Channel_Bw" caption="Damping - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -367,42 +367,42 @@
       <Panel name="AFMNCZAC_A1_Z_Spec_Display" experimentElementInstanceName="A1_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_V_Spec" caption="A2(V)">
+    <Window name="AFMNCZAC_A2_V_Spec" caption="Phase(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A2_V_Spec_Display" experimentElementInstanceName="A2_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_Z_Spec" caption="A2(Z)">
+    <Window name="AFMNCZAC_A2_Z_Spec" caption="Phase(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A2_Z_Spec_Display" experimentElementInstanceName="A2_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_V_Spec" caption="A3(V)">
+    <Window name="AFMNCZAC_A3_V_Spec" caption="Amplitude(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A3_V_Spec_Display" experimentElementInstanceName="A3_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_Z_Spec" caption="A3(Z)">
+    <Window name="AFMNCZAC_A3_Z_Spec" caption="Amplitude(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A3_Z_Spec_Display" experimentElementInstanceName="A3_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_V_Spec" caption="A4(V)">
+    <Window name="AFMNCZAC_A4_V_Spec" caption="Damping(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_A4_V_Spec_Display" experimentElementInstanceName="A4_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_Z_Spec" caption="A4(Z)">
+    <Window name="AFMNCZAC_A4_Z_Spec" caption="Damping(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -482,7 +482,7 @@
       <Panel name="AFMNCZAC_Clock21" experimentElementInstanceName="Clock21" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A2_t" caption="A2(t)">
+    <Window name="AFMNCZAC_A2_t" caption="Phase(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -490,7 +490,7 @@
       <Panel name="AFMNCZAC_Clock22" experimentElementInstanceName="Clock22" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A3_t" caption="A3(t)">
+    <Window name="AFMNCZAC_A3_t" caption="Amplitude(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -498,7 +498,7 @@
       <Panel name="AFMNCZAC_Clock23" experimentElementInstanceName="Clock23" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_A4_t" caption="A4(t)">
+    <Window name="AFMNCZAC_A4_t" caption="Damping(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>

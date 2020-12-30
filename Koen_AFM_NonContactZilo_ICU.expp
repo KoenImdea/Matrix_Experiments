@@ -1564,6 +1564,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A2" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Phase</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>
@@ -1584,6 +1589,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A3" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Amplitude</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>
@@ -1604,6 +1614,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A4" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Damping</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>
@@ -1678,6 +1693,9 @@
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
       </Parameter>
+      <Parameter name="Label" monitored="true">
+            <String>Phase(V)</String>
+      </Parameter>
     </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
@@ -1702,6 +1720,9 @@
     <Group name="Default">
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
+      </Parameter>
+      <Parameter name="Label" monitored="true">
+            <String>Phase(Z)</String>
       </Parameter>
     </Group>
     <Group name="Active">
@@ -1728,6 +1749,9 @@
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
       </Parameter>
+      <Parameter name="Label" monitored="true">
+        <String>Amplitude(V)</String>
+      </Parameter>
     </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
@@ -1753,6 +1777,9 @@
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
       </Parameter>
+      <Parameter name="Label" monitored="true">
+        <String>Amplitude(Z)</String>
+      </Parameter>
     </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
@@ -1775,6 +1802,9 @@
 
   <ExperimentElementInstance name="A4_V" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Damping(V)</String>
+      </Parameter>
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
       </Parameter>
@@ -1800,6 +1830,9 @@
 
   <ExperimentElementInstance name="A4_Z" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Damping(Z)</String>
+      </Parameter>
       <Parameter name="Auto_Flush_Period">
         <Double>0</Double>
       </Parameter>
@@ -1844,6 +1877,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A2_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Phase(t)</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>
@@ -1864,6 +1902,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A3_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Amplitude(t)</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>
@@ -1884,6 +1927,11 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance name="A4_t" elementType="Channel" catalogue="SPMBasic">
+    <Group name="Default">
+      <Parameter name="Label" monitored="true">
+        <String>Damping(t)</String>
+      </Parameter>
+    </Group>
     <Group name="Active">
       <Parameter name="Auto_Oversampling">
         <Boolean>true</Boolean>

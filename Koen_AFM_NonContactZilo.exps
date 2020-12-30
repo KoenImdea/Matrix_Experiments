@@ -334,7 +334,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A2">
-    <DeploymentParameter name="Name" value="A2"/>
+    <DeploymentParameter name="Name" value="Phase"/>
     <DeploymentParameter name="Trigger" value="XYScanner::X"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC2_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
@@ -345,7 +345,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A3">
-    <DeploymentParameter name="Name" value="A3"/>
+    <DeploymentParameter name="Name" value="Amplitude"/>
     <DeploymentParameter name="Trigger" value="XYScanner::X"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC3_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
@@ -356,7 +356,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A4">
-    <DeploymentParameter name="Name" value="A4"/>
+    <DeploymentParameter name="Name" value="Damping"/>
     <DeploymentParameter name="Trigger" value="XYScanner::X"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC4_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
@@ -389,7 +389,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A2_V">
-    <DeploymentParameter name="Name" value="A2(V)"/>
+    <DeploymentParameter name="Name" value="Phase(V)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC2_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
@@ -400,7 +400,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A2_Z">
-    <DeploymentParameter name="Name" value="A2(Z)"/>
+    <DeploymentParameter name="Name" value="Phase(Z)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC2_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
@@ -411,7 +411,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A3_V">
-    <DeploymentParameter name="Name" value="A3(V)"/>
+    <DeploymentParameter name="Name" value="Amplitude(V)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC3_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
@@ -422,7 +422,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A3_Z">
-    <DeploymentParameter name="Name" value="A3(Z)"/>
+    <DeploymentParameter name="Name" value="Amplitude(Z)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC3_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
@@ -433,7 +433,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A4_V">
-    <DeploymentParameter name="Name" value="A4(V)"/>
+    <DeploymentParameter name="Name" value="Damping(V)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC4_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
@@ -444,7 +444,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A4_Z">
-    <DeploymentParameter name="Name" value="A4(Z)"/>
+    <DeploymentParameter name="Name" value="Damping(Z)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC4_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>
@@ -466,7 +466,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A2_t">
-    <DeploymentParameter name="Name" value="A2(t)"/>
+    <DeploymentParameter name="Name" value="Phase(t)"/>
     <DeploymentParameter name="Trigger" value="Clock22::t22"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC2_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC2_In"/>
@@ -477,7 +477,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A3_t">
-    <DeploymentParameter name="Name" value="A3(t)"/>
+    <DeploymentParameter name="Name" value="Amplitude(t)"/>
     <DeploymentParameter name="Trigger" value="Clock23::t23"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC3_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC3_In"/>
@@ -488,7 +488,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="A4_t">
-    <DeploymentParameter name="Name" value="A4(t)"/>
+    <DeploymentParameter name="Name" value="Damping(t)"/>
     <DeploymentParameter name="Trigger" value="Clock24::t24"/>
     <DeploymentParameter name="Sensor_Device" value="Default:ADC4_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="ADC4_In"/>

@@ -472,7 +472,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A2_Fw" type="Image_V3" source="A2" target="AFMNCZAC_A2_ImageDisplayForward_1">
+  <View name="A2_Fw" type="Image_V3" source="Phase" target="AFMNCZAC_A2_ImageDisplayForward_1">
     <Attribute name="Direction" value="Forward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -499,7 +499,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A2_Bw" type="Image_V3" source="A2" target="AFMNCZAC_A2_ImageDisplayBackward_1">
+  <View name="A2_Bw" type="Image_V3" source="Phase" target="AFMNCZAC_A2_ImageDisplayBackward_1">
     <Attribute name="Direction" value="Backward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -526,7 +526,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A3_Fw" type="Image_V3" source="A3" target="AFMNCZAC_A3_ImageDisplayForward_1">
+  <View name="A3_Fw" type="Image_V3" source="Amplitude" target="AFMNCZAC_A3_ImageDisplayForward_1">
     <Attribute name="Direction" value="Forward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -553,7 +553,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A3_Bw" type="Image_V3" source="A3" target="AFMNCZAC_A3_ImageDisplayBackward_1">
+  <View name="A3_Bw" type="Image_V3" source="Amplitude" target="AFMNCZAC_A3_ImageDisplayBackward_1">
     <Attribute name="Direction" value="Backward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -580,7 +580,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A4_Fw" type="Image_V3" source="A4" target="AFMNCZAC_A4_ImageDisplayForward_1">
+  <View name="A4_Fw" type="Image_V3" source="Damping" target="AFMNCZAC_A4_ImageDisplayForward_1">
     <Attribute name="Direction" value="Forward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -607,7 +607,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="A4_Bw" type="Image_V3" source="A4" target="AFMNCZAC_A4_ImageDisplayBackward_1">
+  <View name="A4_Bw" type="Image_V3" source="Damping" target="AFMNCZAC_A4_ImageDisplayBackward_1">
     <Attribute name="Direction" value="Backward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -646,37 +646,37 @@
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A2_V_Spec" type="SPMSpectroscopy_V3" source="A2(V)" target="AFMNCZAC_A2_V_Spec_Display">
+  <View name="A2_V_Spec" type="SPMSpectroscopy_V3" source="Phase(V)" target="AFMNCZAC_A2_V_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A2_Z_Spec" type="SPMSpectroscopy_V3" source="A2(Z)" target="AFMNCZAC_A2_Z_Spec_Display">
+  <View name="A2_Z_Spec" type="SPMSpectroscopy_V3" source="Phase(Z)" target="AFMNCZAC_A2_Z_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A3_V_Spec" type="SPMSpectroscopy_V3" source="A3(V)" target="AFMNCZAC_A3_V_Spec_Display">
+  <View name="A3_V_Spec" type="SPMSpectroscopy_V3" source="Amplitude(V)" target="AFMNCZAC_A3_V_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A3_Z_Spec" type="SPMSpectroscopy_V3" source="A3(Z)" target="AFMNCZAC_A3_Z_Spec_Display">
+  <View name="A3_Z_Spec" type="SPMSpectroscopy_V3" source="Amplitude(Z)" target="AFMNCZAC_A3_Z_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A4_V_Spec" type="SPMSpectroscopy_V3" source="A4(V)" target="AFMNCZAC_A4_V_Spec_Display">
+  <View name="A4_V_Spec" type="SPMSpectroscopy_V3" source="Damping(V)" target="AFMNCZAC_A4_V_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
   </View>
 
-  <View name="A4_Z_Spec" type="SPMSpectroscopy_V3" source="A4(Z)" target="AFMNCZAC_A4_Z_Spec_Display">
+  <View name="A4_Z_Spec" type="SPMSpectroscopy_V3" source="Damping(Z)" target="AFMNCZAC_A4_Z_Spec_Display">
     <Attribute name="Direction" value="Forward"/>
     <Processor name="CurveAverager" type="BrickletAverager_V3"/>
     <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
@@ -686,15 +686,15 @@
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="A2_t" type="ContinuousCurve_V3" source="A2(t)" target="AFMNCZAC_A2_t_Display">
+  <View name="A2_t" type="ContinuousCurve_V3" source="Phase(t)" target="AFMNCZAC_A2_t_Display">
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="A3_t" type="ContinuousCurve_V3" source="A3(t)" target="AFMNCZAC_A3_t_Display">
+  <View name="A3_t" type="ContinuousCurve_V3" source="Amplitude(t)" target="AFMNCZAC_A3_t_Display">
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="A4_t" type="ContinuousCurve_V3" source="A4(t)" target="AFMNCZAC_A4_t_Display">
+  <View name="A4_t" type="ContinuousCurve_V3" source="Damping(t)" target="AFMNCZAC_A4_t_Display">
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
