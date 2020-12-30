@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://www.scientaomicron.com/schema">
+
+  <View name="I_Fw" type="Image_V3" source="I" target="AFMNCZAC_I_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="I_Bw" type="Image_V3" source="I" target="AFMNCZAC_I_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="I_t" type="ContinuousCurve_V3" source="I(t)" target="AFMNCZAC_I_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="I_V_Spec" type="SPMSpectroscopy_V3" source="I(V)" target="AFMNCZAC_I_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="I_Z_Spec" type="SPMSpectroscopy_V3" source="I(Z)" target="AFMNCZAC_I_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="I_V_Spec_CITS_Fw" type="2DOf3D" source="I(V)" target="AFMNCZAC_CITS_I_Spec_Display">
+    <Controller name="ImgIndex" type="View2DOf3D_ImageIndex"/>
+  </View>
+
+  <View name="Z_Fw" type="Image_V3" source="Z" target="AFMNCZAC_Z_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Processor name="AutoDriftCompensator" type="AutoDriftCompensator_V3" experimentElement="XYScanner" cloneable="false"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYMeter" type="XYScanner_XYMeter" experimentElement="XYScanner"/>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="Z_Bw" type="Image_V3" source="Z" target="AFMNCZAC_Z_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Processor name="AutoDriftCompensator" type="AutoDriftCompensator_V3" experimentElement="XYScanner" cloneable="false"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYMeter" type="XYScanner_XYMeter" experimentElement="XYScanner"/>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="Z_t" type="ContinuousCurve_V3" source="Z(t)" target="AFMNCZAC_Z_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="Aux1_Fw" type="Image_V3" source="Df Reg Mon" target="AFMNCZAC_Aux1_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="Aux1_Bw" type="Image_V3" source="Df Reg Mon" target="AFMNCZAC_Aux1_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="I_Reg_Mon_Fw" type="Image_V3" source="I Reg Mon" target="AFMNCZAC_I_Reg_Mon_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="I_Reg_Mon_Bw" type="Image_V3" source="I Reg Mon" target="AFMNCZAC_I_Reg_Mon_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="I_Reg_Mon_t" type="ContinuousCurve_V3" source="I Reg Mon(t)" target="AFMNCZAC_I_Reg_Mon_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="Aux1_t" type="ContinuousCurve_V3" source="Df Reg Mon(t)" target="AFMNCZAC_Aux1_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="Aux1_V_Spec" type="SPMSpectroscopy_V3" source="Aux1(V)" target="AFMNCZAC_Aux1_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="Aux1_Z_Spec" type="SPMSpectroscopy_V3" source="Aux1(Z)" target="AFMNCZAC_Aux1_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="Aux2_Fw" type="Image_V3" source="Aux2" target="AFMNCZAC_Aux2_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="Aux2_Bw" type="Image_V3" source="Aux2" target="AFMNCZAC_Aux2_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="Atma" type="XYScanner_AtMa_Line" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="AtmaMultiLine" type="XYScanner_AtMa_MultiLine" experimentElement="XYScanner">
+      <Attribute name="PortColourPreScan" value="AtMaAcquire"/>
+      <Attribute name="PortColour" value="AtMa"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="Aux2_t" type="ContinuousCurve_V3" source="Aux2(t)" target="AFMNCZAC_Aux2_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="Aux2_V_Spec" type="SPMSpectroscopy_V3" source="Aux2(V)" target="AFMNCZAC_Aux2_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="Aux2_Z_Spec" type="SPMSpectroscopy_V3" source="Aux2(Z)" target="AFMNCZAC_Aux2_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="Z_r" type="AtMa_V3" source="Z(r)" target="AFMNCZAC_Z_r_Display">
+    <Attribute name="Direction" value="Forward"/>
+  </View>
+
+  <View name="I_r" type="AtMa_V3" source="I(r)" target="AFMNCZAC_I_r_Display">
+    <Attribute name="Direction" value="Forward"/>
+  </View>
+
+  <View name="Aux2_r" type="AtMa_V3" source="Aux2(r)" target="AFMNCZAC_Aux2_r_Display">
+    <Attribute name="Direction" value="Forward"/>
+  </View>
+
+  <View name="A1_Fw" type="Image_V3" source="A1" target="AFMNCZAC_A1_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A1_Bw" type="Image_V3" source="A1" target="AFMNCZAC_A1_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A2_Fw" type="Image_V3" source="A2" target="AFMNCZAC_A2_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A2_Bw" type="Image_V3" source="A2" target="AFMNCZAC_A2_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A3_Fw" type="Image_V3" source="A3" target="AFMNCZAC_A3_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A3_Bw" type="Image_V3" source="A3" target="AFMNCZAC_A3_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A4_Fw" type="Image_V3" source="A4" target="AFMNCZAC_A4_ImageDisplayForward_1">
+    <Attribute name="Direction" value="Forward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A4_Bw" type="Image_V3" source="A4" target="AFMNCZAC_A4_ImageDisplayBackward_1">
+    <Attribute name="Direction" value="Backward"/>
+    <Attribute name="UpdateMilliSeconds" value="100"/>
+    <Processor name="PacketAligner" type="PacketAligner_V3"/>
+    <Processor name="LineSlopeSubtractor" type="LineSlopeSubtractor_V3"/>
+    <Processor name="Despiker" type="Despiker_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+    <Processor name="Statistics" type="Statistics_V3"/>
+    <Processor name="Limiter" type="Limiter_V3"/>
+    <Controller name="Refresh" type="View_Refresh"/>
+    <Controller name="SPS" type="XYScanner_SPS" experimentElement="XYScanner"/>
+    <Controller name="SPSLine" type="XYScanner_Spec_Line" experimentElement="XYScanner"/>
+    <Controller name="VPulse" type="XYScanner_VPulseAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="VPulse"/>
+    </Controller>
+    <Controller name="ZRamp" type="XYScanner_ZRampAtLocation" experimentElement="XYScanner">
+      <Attribute name="PortColour" value="ZRamp"/>
+    </Controller>
+    <Controller name="XYAreaInfo" type="XYScanner_AreaInfo" experimentElement="XYScanner"/>
+    <Controller name="GotoXY" type="XYScanner_GotoXY" experimentElement="XYScanner"/>
+    <Controller name="Drift" type="XYScanner_Drift" experimentElement="XYScanner"/>
+    <Controller name="Pulse" type="GapVoltage_Pulse" experimentElement="GapVoltageControl"/>
+    <Controller name="Rotate" type="XYScanner_Rotate" experimentElement="XYScanner"/>
+    <Controller name="AreaSelect" type="XYScanner_AreaSelection" experimentElement="XYScanner"/>
+    <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
+  </View>
+
+  <View name="A1_V_Spec" type="SPMSpectroscopy_V3" source="A1(V)" target="AFMNCZAC_A1_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A1_Z_Spec" type="SPMSpectroscopy_V3" source="A1(Z)" target="AFMNCZAC_A1_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A2_V_Spec" type="SPMSpectroscopy_V3" source="A2(V)" target="AFMNCZAC_A2_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A2_Z_Spec" type="SPMSpectroscopy_V3" source="A2(Z)" target="AFMNCZAC_A2_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A3_V_Spec" type="SPMSpectroscopy_V3" source="A3(V)" target="AFMNCZAC_A3_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A3_Z_Spec" type="SPMSpectroscopy_V3" source="A3(Z)" target="AFMNCZAC_A3_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A4_V_Spec" type="SPMSpectroscopy_V3" source="A4(V)" target="AFMNCZAC_A4_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A4_Z_Spec" type="SPMSpectroscopy_V3" source="A4(Z)" target="AFMNCZAC_A4_Z_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
+  <View name="A1_t" type="ContinuousCurve_V3" source="A1(t)" target="AFMNCZAC_A1_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="A2_t" type="ContinuousCurve_V3" source="A2(t)" target="AFMNCZAC_A2_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="A3_t" type="ContinuousCurve_V3" source="A3(t)" target="AFMNCZAC_A3_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+  <View name="A4_t" type="ContinuousCurve_V3" source="A4(t)" target="AFMNCZAC_A4_t_Display">
+    <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
+  </View>
+
+</ViewSystem>
