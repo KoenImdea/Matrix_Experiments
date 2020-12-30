@@ -202,7 +202,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Aux1_V">
-    <DeploymentParameter name="Name" value="Aux1(V)"/>
+    <DeploymentParameter name="Name" value="Δf(V)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
     <DeploymentParameter name="Sensor_Device" value="Default:Aux1_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
@@ -213,7 +213,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Aux1_Z">
-    <DeploymentParameter name="Name" value="Aux1(Z)"/>
+    <DeploymentParameter name="Name" value="Δf(Z)"/>
     <DeploymentParameter name="Trigger" value="Spectroscopy::Z"/>
     <DeploymentParameter name="Sensor_Device" value="Default:Aux1_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>

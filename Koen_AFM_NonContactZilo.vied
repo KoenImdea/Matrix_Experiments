@@ -166,7 +166,7 @@
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="Aux1_Fw" type="Image_V3" source="Df Reg Mon" target="AFMNCZAC_Aux1_ImageDisplayForward_1">
+  <View name="Aux1_Fw" type="Image_V3" source="Δf" target="AFMNCZAC_Aux1_ImageDisplayForward_1">
     <Attribute name="Direction" value="Forward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -200,7 +200,7 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
-  <View name="Aux1_Bw" type="Image_V3" source="Df Reg Mon" target="AFMNCZAC_Aux1_ImageDisplayBackward_1">
+  <View name="Aux1_Bw" type="Image_V3" source="Δf" target="AFMNCZAC_Aux1_ImageDisplayBackward_1">
     <Attribute name="Direction" value="Backward"/>
     <Attribute name="UpdateMilliSeconds" value="100"/>
     <Processor name="PacketAligner" type="PacketAligner_V3"/>
@@ -306,7 +306,7 @@
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
-  <View name="Aux1_t" type="ContinuousCurve_V3" source="Df Reg Mon(t)" target="AFMNCZAC_Aux1_t_Display">
+  <View name="Aux1_t" type="ContinuousCurve_V3" source="Δf(t)" target="AFMNCZAC_Aux1_t_Display">
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
 
