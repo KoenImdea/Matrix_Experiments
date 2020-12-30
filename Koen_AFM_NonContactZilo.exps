@@ -761,10 +761,6 @@
   </Connection>
 
   <Connection>
-    <SourceRef name="Spectroscopy" port="Device_2_Ramp_Reversal_Enabled"/>
-  </Connection>
-
-  <Connection>
     <SourceRef name="Spectroscopy" port="Disable_Feedback_Loop"/>
     <DestinationRef name="Regulator" port="Disable_Feedback_Loop"/>
   </Connection>
