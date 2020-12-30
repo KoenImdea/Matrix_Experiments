@@ -739,10 +739,6 @@
   </Connection>
 
   <Connection>
-    <SourceRef name="Spectroscopy" port="Device_1_Ramp_Reversal_Enabled"/>
-  </Connection>
-
-  <Connection>
     <SourceRef name="Spectroscopy" port="Raster_Time_2"/>
     <DestinationRef name="I_Z" port="Raster_Time"/>
     <DestinationRef name="Aux1_Z" port="Raster_Time"/>
