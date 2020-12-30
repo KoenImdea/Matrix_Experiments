@@ -267,6 +267,17 @@
     <DeploymentParameter name="Run_Frequency" value="null"/>
   </ExperimentElementInstance>
 
+  <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Z_V">
+    <DeploymentParameter name="Name" value="Z(V)"/>
+    <DeploymentParameter name="Trigger" value="Spectroscopy::V"/>
+    <DeploymentParameter name="Sensor_Device" value="Default:Z_In"/>
+    <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Common::Z_Out"/>
+    <DeploymentParameter name="Rules" value="null"/>
+    <DeploymentParameter name="Siblings" value="null"/>
+    <DeploymentParameter name="RDTP_TCP_Port" value="5058"/>
+    <DeploymentParameter name="Run_Frequency" value="null"/>
+  </ExperimentElementInstance>
+
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Z_t">
     <DeploymentParameter name="Name" value="Z(t)"/>
     <DeploymentParameter name="Trigger" value="Clock1::t1"/>
@@ -654,6 +665,7 @@
 
   <Connection>
     <SourceRef name="Spectroscopy" port="Stopped"/>
+    <DestinationRef name="Z_V" port="End_Transmission"/>
     <DestinationRef name="I_V" port="End_Transmission"/>
     <DestinationRef name="I_Z" port="End_Transmission"/>
     <DestinationRef name="Aux1_V" port="End_Transmission"/>
@@ -672,6 +684,7 @@
 
   <Connection>
     <SourceRef name="Spectroscopy" port="Ramp_Active"/>
+    <DestinationRef name="Z_V" port="Lock"/>
     <DestinationRef name="I_V" port="Lock"/>
     <DestinationRef name="I_Z" port="Lock"/>
     <DestinationRef name="Aux1_V" port="Lock"/>
@@ -690,6 +703,7 @@
 
   <Connection>
     <SourceRef name="Spectroscopy" port="Ramp_Done"/>
+    <DestinationRef name="Z_V" port="Unlock"/>
     <DestinationRef name="I_V" port="Unlock"/>
     <DestinationRef name="I_Z" port="Unlock"/>
     <DestinationRef name="Aux1_V" port="Unlock"/>
@@ -718,6 +732,7 @@
 
   <Connection>
     <SourceRef name="Spectroscopy" port="Raster_Time_1"/>
+    <DestinationRef name="Z_V" port="Raster_Time"/>
     <DestinationRef name="I_V" port="Raster_Time"/>
     <DestinationRef name="Aux1_V" port="Raster_Time"/>
     <DestinationRef name="Aux2_V" port="Raster_Time"/>
@@ -729,6 +744,7 @@
 
   <Connection>
     <SourceRef name="Spectroscopy" port="Device_1_Points"/>
+    <DestinationRef name="Z_V" port="Points"/>
     <DestinationRef name="I_V" port="Points"/>
     <DestinationRef name="Aux1_V" port="Points"/>
     <DestinationRef name="Aux2_V" port="Points"/>

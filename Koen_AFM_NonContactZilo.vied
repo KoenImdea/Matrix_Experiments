@@ -162,6 +162,12 @@
     <Controller name="Subgrid" type="XYScanner_Subgrid" experimentElement="XYScanner"/>
   </View>
 
+  <View name="Z_V_Spec" type="SPMSpectroscopy_V3" source="Z(V)" target="KOEN_AFMNCZ_ZV_Z_V_Spec_Display">
+    <Attribute name="Direction" value="Forward"/>
+    <Processor name="CurveAverager" type="BrickletAverager_V3"/>
+    <Processor name="LineDifferentiator" type="LineDifferentiator_V3"/>
+  </View>
+
   <View name="Z_t" type="ContinuousCurve_V3" source="Z(t)" target="KOEN_AFMNCZ_ZV_Z_t_Display">
     <Processor name="PowerSpectrum" type="ContPowerSpectrumGenerator_V3"/>
   </View>
