@@ -218,14 +218,14 @@
       <Panel name="AFMNCZAC_I_Reg_Mon_ImageDisplayBackward_1" experimentElementInstanceName="I_Reg_Mon" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Channel_Fw" caption="Df Reg Mon - Forward">
+    <Window name="AFMNCZAC_Aux1_Channel_Fw" caption="Δf - Forward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_Aux1_ImageDisplayForward_1" experimentElementInstanceName="Aux1" panelType="2D_Display"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Channel_Bw" caption="Df Reg Mon - Backward">
+    <Window name="AFMNCZAC_Aux1_Channel_Bw" caption="Δf - Backward">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -318,14 +318,14 @@
       <Panel name="AFMNCZAC_I_Z_Spec_Display" experimentElementInstanceName="I_Z" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_V_Spec" caption="Df Reg Mon(V)">
+    <Window name="AFMNCZAC_Aux1_V_Spec" caption="Δf(V)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
       <Panel name="AFMNCZAC_Aux1_V_Spec_Display" experimentElementInstanceName="Aux1_V" panelType="MultiCurveDisplay"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_Z_Spec" caption="Df Reg Mon(Z)">
+    <Window name="AFMNCZAC_Aux1_Z_Spec" caption="Δf(Z)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -458,7 +458,7 @@
       <Panel name="AFMNCZAC_Clock2" experimentElementInstanceName="Clock2" panelType="BasicClock"/>
     </Window>
 
-    <Window name="AFMNCZAC_Aux1_t" caption="Df Reg Mon(t)">
+    <Window name="AFMNCZAC_Aux1_t" caption="Δf(t)">
       <Layout border="noFrame" spacing="10">
         <BoxSpecification alignment="auto" direction="vertical"/>
       </Layout>
@@ -506,7 +506,7 @@
       <Panel name="AFMNCZAC_Clock24" experimentElementInstanceName="Clock24" panelType="BasicClock"/>
     </Window>
 
-    <WindowGroup name="AFMNCZAC_Window_Group_1" caption="AFM NonContact Aux Channels" icon="AfmNonContactZilo.png" primaryWindow="AFMNCZAC_XYScanner">
+    <WindowGroup name="AFMNCZAC_Window_Group_1" caption="Koen AFM NonContact Analog" icon="AfmNonContactZilo.png" primaryWindow="AFMNCZAC_XYScanner">
       <WindowRef windowRef="AFMNCZAC_ChannelList"/>
       <WindowRef windowRef="AFMNCZAC_ChannelListAtma"/>
       <WindowRef windowRef="AFMNCZAC_ChannelListSass"/>

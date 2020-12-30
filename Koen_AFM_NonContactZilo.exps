@@ -180,7 +180,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Aux1">
-    <DeploymentParameter name="Name" value="Df Reg Mon"/>
+    <DeploymentParameter name="Name" value="Δf"/>
     <DeploymentParameter name="Trigger" value="XYScanner::X"/>
     <DeploymentParameter name="Sensor_Device" value="Default:Aux1_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>
@@ -312,7 +312,7 @@
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Aux1_t">
-    <DeploymentParameter name="Name" value="Df Reg Mon(t)"/>
+    <DeploymentParameter name="Name" value="Δf(t)"/>
     <DeploymentParameter name="Trigger" value="Clock20::t20"/>
     <DeploymentParameter name="Sensor_Device" value="Default:Aux1_In"/>
     <DeploymentParameter name="Sensor_Device_Calibration_Name" value="Aux1_In"/>

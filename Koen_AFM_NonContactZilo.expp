@@ -1125,7 +1125,7 @@
   <ExperimentElementInstance name="Aux1" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
       <Parameter name="Label" monitored="true">
-        <String>Df Reg Mon</String>
+        <String>Δf</String>
       </Parameter>
     </Group>
     <Group name="Active">
@@ -1150,7 +1150,7 @@
   <ExperimentElementInstance name="Aux1_V" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
       <Parameter name="Label" monitored="true">
-        <String>Df Reg Mon(V)</String>
+        <String>Δf(V)</String>
       </Parameter>
     </Group>
     <Group name="Active">
@@ -1175,7 +1175,7 @@
   <ExperimentElementInstance name="Aux1_Z" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
       <Parameter name="Label" monitored="true">
-        <String>Df Reg Mon(Z)</String>
+        <String>Δf(Z)</String>
       </Parameter>
     </Group>
     <Group name="Active">
@@ -1200,7 +1200,7 @@
   <ExperimentElementInstance name="Aux1_t" elementType="Channel" catalogue="SPMBasic">
     <Group name="Default">
       <Parameter name="Label" monitored="true">
-        <String>Df Reg Mon(t)</String>
+        <String>Δf(t)</String>
       </Parameter>
     </Group>
     <Group name="Active">
