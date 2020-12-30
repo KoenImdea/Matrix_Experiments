@@ -32,14 +32,14 @@
     <DeploymentParameter name="Output_Device_Calibration_Name" value="Common::Z_Out"/>
     <DeploymentParameter name="Comparator_Device" value="Default:Setpoint_I"/>
     <DeploymentParameter name="Z_Inverter_Device" value="Default:Z_Inverter"/>
-    <DeploymentParameter name="Source_Channel_1" value="Aux1_Reg"/>
-    <DeploymentParameter name="Source_Channel_2" value="I_Reg"/>
-    <DeploymentParameter name="Setpoint_Device_1" value="Default:Setpoint_V"/>
-    <DeploymentParameter name="Setpoint_Device_2" value="Default:Setpoint_I"/>
-    <DeploymentParameter name="Setpoint_Device_1_Calibration_Name" value="Setpoint_V"/>
-    <DeploymentParameter name="Setpoint_Device_2_Calibration_Name" value="Setpoint_I"/>
-    <DeploymentParameter name="Special_Setpoint_Device_1_Calibration_Name" value="Setpoint_V_Special"/>
-    <DeploymentParameter name="Special_Setpoint_Device_2_Calibration_Name" value="Setpoint_I_Special"/>
+    <DeploymentParameter name="Source_Channel_1" value="I_Reg"/>
+    <DeploymentParameter name="Source_Channel_2" value="Aux1_Reg"/>
+    <DeploymentParameter name="Setpoint_Device_1" value="Default:Setpoint_I"/>
+    <DeploymentParameter name="Setpoint_Device_2" value="Default:Setpoint_V"/>
+    <DeploymentParameter name="Setpoint_Device_1_Calibration_Name" value="Setpoint_I"/>
+    <DeploymentParameter name="Setpoint_Device_2_Calibration_Name" value="Setpoint_V"/>
+    <DeploymentParameter name="Special_Setpoint_Device_1_Calibration_Name" value="Setpoint_I_Special"/>
+    <DeploymentParameter name="Special_Setpoint_Device_2_Calibration_Name" value="Setpoint_V_Special"/>
   </ExperimentElementInstance>
 
   <ExperimentElementInstance catalogue="SPMBasic" elementType="Channel" name="Aux1_Reg">

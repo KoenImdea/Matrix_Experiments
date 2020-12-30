@@ -283,16 +283,16 @@
   <ExperimentElementInstance name="Regulator" elementType="Regulator" catalogue="SPMBasic">
     <Group name="Default">
       <Parameter name="ADC_Read_Mode_1">
-        <Cardinal>0</Cardinal>
+        <Cardinal>1</Cardinal>
       </Parameter>
       <Parameter name="ADC_Read_Mode_2">
-        <Cardinal>1</Cardinal>
+        <Cardinal>0</Cardinal>
       </Parameter>
       <Parameter name="Algorithm_Characteristics_1">
-        <Cardinal>10</Cardinal>
+        <Cardinal>1</Cardinal>
       </Parameter>
       <Parameter name="Algorithm_Characteristics_2">
-        <Cardinal>1</Cardinal>
+        <Cardinal>10</Cardinal>
       </Parameter>
       <Parameter name="Alternate_Line_Weighting" monitored="true">
         <Double>100</Double>
@@ -322,10 +322,10 @@
         <Double>0</Double>
       </Parameter>
       <Parameter name="Alternate_Setpoint_1" monitored="true">
-        <Double>0</Double>
+        <Double>1e-009</Double>
       </Parameter>
       <Parameter name="Alternate_Setpoint_2" monitored="true">
-        <Double>1e-009</Double>
+        <Double>0</Double>
       </Parameter>
       <Parameter name="Enable_Alternate_Line_Weighting" monitored="true">
         <Boolean>false</Boolean>
@@ -361,10 +361,10 @@
         <Boolean>false</Boolean>
       </Parameter>
       <Parameter name="Feedback_Loop_Characteristic_1">
-        <Cardinal>0</Cardinal>
+        <Cardinal>1</Cardinal>
       </Parameter>
       <Parameter name="Feedback_Loop_Characteristic_2">
-        <Cardinal>1</Cardinal>
+        <Cardinal>0</Cardinal>
       </Parameter>
       <Parameter name="Feedback_Loop_Enabled" monitored="true">
         <Boolean>true</Boolean>
@@ -465,10 +465,10 @@
         <Cardinal>1</Cardinal>
       </Parameter>
       <Parameter name="Setpoint_1" monitored="true">
-        <Double>0</Double>
+        <Double>1e-009</Double>
       </Parameter>
       <Parameter name="Setpoint_2" monitored="true">
-        <Double>1e-009</Double>
+        <Double>0</Double>
       </Parameter>
       <Parameter name="Sign_1" monitored="true">
         <Cardinal>0</Cardinal>
@@ -492,10 +492,10 @@
         <Cardinal>1</Cardinal>
       </Parameter>
       <Parameter name="Special_Setpoint_1" monitored="true">
-        <Double>0</Double>
+        <Double>1e-009</Double>
       </Parameter>
       <Parameter name="Special_Setpoint_2" monitored="true">
-        <Double>1e-009</Double>
+        <Double>0</Double>
       </Parameter>
       <Parameter name="Z_Offset_Delay" monitored="true">
         <Double>0</Double>

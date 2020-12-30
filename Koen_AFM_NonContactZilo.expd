@@ -43,7 +43,6 @@
           </Layout>
           <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopBasic" experimentElementInstanceName="Regulator" panelType="FeedbackLoopBasic"/>
           <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopZOffset" experimentElementInstanceName="Regulator" panelType="FeedbackLoopZOffset"/>
-          <Panel name="KOEN_AFMNCZ_ZV_TipProtection" experimentElementInstanceName="Regulator" panelType="RegulatorTipProtection"/>
           <Panel name="KOEN_AFMNCZ_ZV_ZPlane" experimentElementInstanceName="XYScanner" panelType="ZPlane"/>
           <Panel name="KOEN_AFMNCZ_ZV_FeedbackLoopParameter" experimentElementInstanceName="Regulator" panelType="FeedbackLoopParameterLGP"/>
           <Panel name="KOEN_AFMNCZ_ZV_AutoApproach" experimentElementInstanceName="PiezoControl" panelType="AutoApproach"/>
@@ -53,8 +52,8 @@
         <Layout spacing="7">
           <BoxSpecification alignment="auto" direction="horizontal"/>
         </Layout>
-        <Panel name="KOEN_AFMNCZ_ZV_Aux1Filter" experimentElementInstanceName="DRBService" panelType="Aux1Filter"/>
         <Panel name="KOEN_AFMNCZ_ZV_IRegulatorFilter" experimentElementInstanceName="STMSCBService" panelType="IRegulatorFilter"/>
+        <Panel name="KOEN_AFMNCZ_ZV_Aux1Filter" experimentElementInstanceName="DRBService" panelType="Aux1Filter"/>
       </GuiContainer>
       <Panel name="KOEN_AFMNCZ_ZV_PFU" experimentElementInstanceName="StageCalibration" panelType="PFU"/>
     </Window>
